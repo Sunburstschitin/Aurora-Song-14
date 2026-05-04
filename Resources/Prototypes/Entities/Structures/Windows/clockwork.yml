@@ -53,6 +53,35 @@
     damageOverlay:
       sprite: Structures/Windows/cracks.rsi
 
+# Aurora's Song
+
+- type: entity
+  id: ClockworkWindowTwo
+  parent: ClockworkWindow
+  components:
+    - type: Sprite
+      layers:
+        - state: cwshine2
+
+- type: entity
+  id: ClockworkWindowThree
+  parent: ClockworkWindow
+  components:
+    - type: Sprite
+      layers:
+        - state: cwshine3
+
+- type: entity
+  id: CWindowRandom
+  parent: ClockworkWindow
+  suffix: Random
+  components:
+    - type: RandomSprite
+      available:
+        - 0:
+            cwshine2: ""
+            cwshine3: ""
+
 - type: entity
   id: WindowClockworkDirectional
   parent: WindowDirectional
