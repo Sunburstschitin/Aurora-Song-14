@@ -1,15 +1,14 @@
+# Aurora's Song - Convert to nubody and simplify
+
 # Organs with boosted metabolizm
 - type: entity
   id: OrganSyntheticHeart
-  parent: [BaseHumanOrgan, BaseC3SyndicateContraband] # Frontier: add BaseC3SyndicateContraband
+  parent: [OrganHumanHeart, BaseC3SyndicateContraband] # Frontier: add BaseC3SyndicateContraband
   name: synthetic heart
   description: "Whirrs and pumps blood."
   components:
-  - type: Sprite
-    state: heart-on
   - type: Metabolizer
     maxReagents: 4
-    metabolizerTypes: [Human]
     groups:
     - id: Medicine
     - id: Cryogenic # Frontier
@@ -19,15 +18,12 @@
 
 - type: entity
   id: OrganSyntheticLiver
-  parent: [BaseHumanOrgan, BaseC3SyndicateContraband] # Frontier: add BaseC3SyndicateContraband
+  parent: [OrganHumanLiver, BaseC3SyndicateContraband] # Frontier: add BaseC3SyndicateContraband
   name: synthetic liver
   description: "Filters toxins from the bloodstream at higher rate than old 'ganic liver."
   components:
-  - type: Sprite
-    state: liver
   - type: Metabolizer
     maxReagents: 5
-    metabolizerTypes: [Human]
     groups:
     - id: Alcohol
       rateModifier: 10 # removes Alcohol fast
@@ -40,15 +36,9 @@
 
 - type: entity
   id: OrganSyntheticKidneys
-  parent: [BaseHumanOrgan, BaseC3SyndicateContraband] # Frontier: add BaseC3SyndicateContraband
+  parent: [OrganHumanKidneys, BaseC3SyndicateContraband] # Frontier: add BaseC3SyndicateContraband
   name: synthetic kidneys
   description: "Filters toxins from the bloodstream at higher rate than old 'ganic liver."
   components:
-  - type: Sprite
-    layers:
-      - state: kidney-l
-      - state: kidney-r
   - type: Metabolizer
     maxReagents: 5
-    metabolizerTypes: [Human]
-    removeEmpty: true
