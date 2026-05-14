@@ -1,0 +1,31 @@
+{
+    "version": 1,
+    "copyright": "smallflower sprited by parahumans (discord), remaining sprited by SunburstsChitin (github)",
+    "license": "CC-BY-SA-4.0",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "nymphtail",
+            "directions": 4
+        },
+        {
+            "name": "smallflower",
+            "directions": 4
+        },
+        {
+            "name": "snake",
+            "directions": 4
+        },
+        {
+            "name": "sprouttail",
+            "directions": 4
+        },
+        {
+            "name": "trunk",
+            "directions": 4
+        }
+    ]
+}
