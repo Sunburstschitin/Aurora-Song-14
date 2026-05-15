@@ -1,7 +1,6 @@
 using Content.Server.Popups;
 using Content.Server.Power.Components;
 using Content.Server.Power.EntitySystems;
-using Content.Server.PowerCell;
 using Content.Shared.Damage;
 using Content.Shared.Damage.Systems;
 using Content.Shared.Examine;
@@ -32,25 +31,17 @@ public sealed class RechargeableBlockingSystem : EntitySystem
 
     private void OnExamined(EntityUid uid, RechargeableBlockingComponent component, ExaminedEvent args)
     {
-        if (!component.Discharged)
+
+        // Aurora's Song Start - overhaul this function to work with modern systems and component behaviour
+        if (_battery.TryGetBatteryComponent(uid, out var entBat, out var batUid))
         {
-            _powerCell.OnBatteryExamined(uid, null, args);
-            return;
-        }
 
-        args.PushMarkup(Loc.GetString("rechargeable-blocking-discharged"));
-        args.PushMarkup(Loc.GetString("rechargeable-blocking-remaining-time", ("remainingTime", GetRemainingTime(uid))));
-    }
+            var charge = _battery.GetChargeLevel((batUid.Value, entBat)) * 100;
+            args.PushMarkup(Loc.GetString("power-cell-component-examine-details", ("currentCharge", $"{charge:F0}")));
 
-    private int GetRemainingTime(EntityUid uid)
-    {
-        if (!_battery.TryGetBatteryComponent(uid, out var batteryComponent, out var batteryUid)
-            || !TryComp<BatterySelfRechargerComponent>(batteryUid, out var recharger)
-            || recharger is not { AutoRechargeRate: > 0})
-            return 0;
 
-        return (int) MathF.Round((batteryComponent.MaxCharge - batteryComponent.LastCharge) /
-                                 recharger.AutoRechargeRate);
+        } // Aurora's Song End
+
     }
 
     private void OnDamageChanged(EntityUid uid, RechargeableBlockingComponent component, DamageChangedEvent args)
@@ -60,19 +51,22 @@ public sealed class RechargeableBlockingSystem : EntitySystem
             || args.DamageDelta == null)
             return;
 
-        var batteryUse = Math.Min(args.DamageDelta.GetTotal().Float(), batteryComponent.LastCharge);
-        _battery.TryUseCharge(batteryUid.Value, batteryUse);
+        var currentCharge = _battery.GetCharge((batteryUid.Value, batteryComponent)); // Aurora's Song | Modern way to get current charge
+
+        var batteryUse = Math.Min(args.DamageDelta.GetTotal().Float(), currentCharge); // Aurora's Song | batteryComponent.CurrentCharge->batteryComponent.LastCharge
+        _battery.TryUseCharge(batteryUid.Value, batteryUse); // Aurora's Song | Update to use proper amount of arguments, and not pass the battery component in erroneously
     }
 
     private void AttemptToggle(EntityUid uid, RechargeableBlockingComponent component, ref ItemToggleActivateAttemptEvent args)
-    {
-        if (!component.Discharged)
+    { //Aurora's Song Start - Rewrite function to work with modern systems, also get rid of Discharged state
+        if (!_battery.TryGetBatteryComponent(uid, out var battery, out var batteryUid))
             return;
-
-        _popup.PopupEntity(Loc.GetString("rechargeable-blocking-remaining-time-popup",
-                ("remainingTime", GetRemainingTime(uid))),
-            args.User ?? uid);
-        args.Cancelled = true;
+        var currentCharge = _battery.GetCharge((batteryUid.Value, battery));
+        if (currentCharge < (0.25 * battery.MaxCharge))
+        {
+            _popup.PopupEntity(Loc.GetString("shield-low-charge-toggle-fail"), args.User ?? uid);
+            args.Cancelled = true;
+        } //Aurora's Song End - Function rewrite
     }
     private void OnChargeChanged(EntityUid uid, RechargeableBlockingComponent component, ChargeChangedEvent args)
     {
@@ -85,26 +79,16 @@ public sealed class RechargeableBlockingSystem : EntitySystem
     }
 
     private void CheckCharge(EntityUid uid, RechargeableBlockingComponent component)
-    {
-        if (!_battery.TryGetBatteryComponent(uid, out var battery, out _))
+    {// Aurora's Song Start - basically completely rewrite this entire method to actually work with modern systems and component architecture
+        if (!_battery.TryGetBatteryComponent(uid, out var battery, out var batteryUid)) // Aurora's Song | make it output the Uid so we can get the charge
             return;
+        var currentCharge = _battery.GetCharge((batteryUid.Value, battery));
 
-        BatterySelfRechargerComponent? recharger;
-        if (battery.CurrentCharge < 1)
+        if (currentCharge < 1) // Aurora's Song | batteryComponent.CurrentCharge->currentCharge
         {
-            if (TryComp(uid, out recharger))
-                recharger.AutoRechargeRate = component.DischargedRechargeRate;
-
-            component.Discharged = true;
             _itemToggle.TryDeactivate(uid, predicted: false);
             return;
         }
 
-        if (battery.CurrentCharge < battery.MaxCharge)
-            return;
-
-        component.Discharged = false;
-        if (TryComp(uid, out recharger))
-                recharger.AutoRechargeRate = component.ChargedRechargeRate;
-    }
+    }// Aurora's Song End - rewrite function
 }

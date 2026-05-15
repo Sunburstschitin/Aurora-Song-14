@@ -521,15 +521,15 @@
       damageContainer: Shield
     - type: StaticPrice
       price: 350
-      # WD EDIT START
+      # Aurora's Song Start - Rechargeable Blocking
     - type: Battery
-      maxCharge: 20
-      startingCharge: 20
+      maxCharge: 100
+      startingCharge: 100
     - type: BatterySelfRecharger
-      autoRecharge: true
-      autoRechargeRate: 2
+      autoRechargeRate: 5
+      nextAutoRecharge: 10
     - type: RechargeableBlocking
-      # WD EDIT END
+      # Aurora's Song End - Rechargeable Blocking
 
 - type: entity
   name: broken energy shield
