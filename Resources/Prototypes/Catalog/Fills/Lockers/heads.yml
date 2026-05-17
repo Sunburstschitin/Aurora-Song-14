@@ -212,21 +212,18 @@
   id: LockerFillChiefMedicalOfficerNoHardsuit
   table: !type:AllSelector
     children:
-#    - id: BoxEncryptionKeyMedical # Frontier - bloat
-#    - id: ClothingBackpackDuffelSurgeryFilled # Frontier - bloat
     - id: ClothingEyesHudMedical
-#    - id: ClothingHandsGlovesNitrile # Frontier - bloat
-    - id: ClothingHeadsetAltMedical
-#    - id: ClothingMaskSterile # Frontier - bloat
-#    - id: DoorRemoteMedical # Frontier - bloat
+    - id: ClothingBeltMedicalFilled
     - id: HandheldCrewMonitor
     # - id: Hypospray # Frontier - balance
     - id: HypoMini # Frontier
-    # - id: BoxCMOCircuitboards # Frontier - bloat
-    # - id: MedkitFilled # Frontier - bloat
-    # - id: RubberStampCMO # Frontier - MOM stamp
     - id: MedTekCartridge
-    - id: ClothingBeltMedicalFilled # Frontier - add more bloat
+    # Standard command gear
+    # - id: RubberStampCMO # Frontier - bloat
+    - id: ClothingHeadsetAltMedical
+    # - id: DoorRemoteMedical # Frontier - bloat
+    # - id: BoxEncryptionKeyMedical # Frontier - bloat
+    # - id: BoxCMOCircuitboards # Frontier - bloat
     - id: RubberStampDoctor # Frontier
 
 # Hardsuit table, used for suit storage as well

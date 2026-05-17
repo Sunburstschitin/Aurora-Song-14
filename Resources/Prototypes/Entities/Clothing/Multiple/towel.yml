@@ -115,6 +115,8 @@
   - type: Fiber
     fiberColor: fibers-white
 
+# Aurora's Song - Leave towels in (LBK)
+
 - type: entity # Aurora's Song - added towel unfolded state
   id: TowelColorPurple
   name: purple towel

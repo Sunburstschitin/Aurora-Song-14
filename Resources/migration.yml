@@ -905,3 +905,6 @@ RightLegIPC: OrganIPCLegRight
 RightFootIPC: OrganIPCFootRight
 TorsoIPC: OrganIPCTorso
 # starcup end
+
+# 2026-01-19
+# TowelColorOrange: null # Aurora's Song
