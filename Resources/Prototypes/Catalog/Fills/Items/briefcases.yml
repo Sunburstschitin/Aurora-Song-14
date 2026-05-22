@@ -67,7 +67,7 @@
     containers:
       storagebase: !type:AllSelector
         children:
-        - id: WeaponShotgunHushpup
+        - id: ASWeaponShotgunHushpup # Aurora's Song - WeaponShotgunHushpup>ASWeaponShotgunHushpup
         - id: TreasureCoinIron
 
 - type: entity
@@ -78,7 +78,7 @@
   - type: EntityTableContainerFill
     containers:
       storagebase:
-        id: WeaponSubMachineGunC20r
+        id: NFWeaponSubMachineGunC20r # Aurora's Song - WeaponSubMachineGunC20r>NFWeaponSubMachineGunC20r
 
 - type: entity
   id: BriefcaseWeaponBulldogFilled
@@ -88,17 +88,18 @@
   - type: EntityTableContainerFill
     containers:
       storagebase:
-        id: WeaponShotgunBulldog
+        id: NFWeaponShotgunBulldog # Aurora's Song - WeaponShotgunBulldog>NFWeaponShotgunBulldog
 
-- type: entity
-  id: BriefcaseWeaponDMRFilled
-  parent: BriefcaseWeapon
-  name: secure estoc case
-  components:
-  - type: EntityTableContainerFill
-    containers:
-      storagebase:
-        id: WeaponRifleEstoc
+# Aurora's Song - Disable Estoc
+#- type: entity
+#  id: BriefcaseWeaponDMRFilled
+#  parent: BriefcaseWeapon
+#  name: secure estoc case
+#  components:
+#  - type: EntityTableContainerFill
+#    containers:
+#      storagebase:
+#        id: WeaponRifleEstoc
 
 - type: entity
   id: BriefcaseWeaponChinaLakeFilled
@@ -109,6 +110,6 @@
     containers:
       storagebase: !type:AllSelector
         children:
-        - id: WeaponLauncherChinaLake
-        - id: GrenadeFrag
+        - id: NFWeaponLauncherChinaLake # Aurora's Song - WeaponLauncherChinaLake>NFWeaponLauncherChinaLake
+        - id: NFGrenadeFrag # Aurora's Song - GrenadeFrag>NFGrenadeFrag
           amount: 2
