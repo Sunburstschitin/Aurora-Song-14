@@ -5,8 +5,7 @@
 #- type: marking
 #  id: FullID
 #  bodyPart: Part
-#  markingCategory: Category
-#  speciesRestriction: [Species, Species]
+#  groupWhitelist: [Species, Species]
 #  youre on your own for figuring out the coloring system, my friend
 #  sprites:
 #  - sprite: _Impstation/Mobs/Customization/filelocation.rsi
@@ -16,8 +15,7 @@
 - type: marking
   id: fizz
   bodyPart: Head
-  markingCategory: Overlay # Aurora's Song - Moved slime markings to overlay
-  speciesRestriction: [ SlimePerson ]
+  groupWhitelist: [ Slime ]
   forcedColoring: false
   followSkinColor: false
   sprites:
@@ -27,8 +25,7 @@
 - type: marking
   id: bubble
   bodyPart: Chest
-  markingCategory: Chest
-  speciesRestriction: [ SlimePerson ]
+  groupWhitelist: [ Slime ]
   forcedColoring: false
   followSkinColor: false
   sprites:
@@ -38,8 +35,7 @@
 - type: marking
   id: fishbowl
   bodyPart: Chest
-  markingCategory: Chest
-  speciesRestriction: [ SlimePerson ]
+  groupWhitelist: [ Slime ]
   forcedColoring: false
   followSkinColor: false
   sprites:
@@ -51,8 +47,7 @@
 - type: marking
   id: FadingStars
   bodyPart: Head
-  markingCategory: Overlay # Aurora's Song - Moved slime markings to overlay
-  speciesRestriction: [ SlimePerson ]
+  groupWhitelist: [ Slime ]
   forcedColoring: false
   followSkinColor: false
   sprites:
@@ -67,8 +62,7 @@
 - type: marking
   id: DionaLivingNymph
   bodyPart: Chest
-  markingCategory: Chest
-  speciesRestriction: [ Diona ]
+  groupWhitelist: [ Diona ]
   sprites:
   - sprite: _Impstation/Mobs/Customization/animatedmarkings.rsi
     state: dionalivingnymph
@@ -76,8 +70,7 @@
 - type: marking
   id: DionaMossChest
   bodyPart: Chest
-  markingCategory: Chest
-  speciesRestriction: [ Diona ]
+  groupWhitelist: [ Diona ]
   forcedColoring: false
   followSkinColor: false
   sprites:
@@ -87,8 +80,7 @@
 - type: marking
   id: DionaMoonBloom
   bodyPart: HeadTop
-  markingCategory: HeadTop
-  speciesRestriction: [ Diona ]
+  groupWhitelist: [ Diona ]
   forcedColoring: false
   followSkinColor: false
   sprites:
@@ -99,8 +91,7 @@
 - type: marking
   id: DionaBigFirefly
   bodyPart: Head
-  markingCategory: Head
-  speciesRestriction: [ Diona ]
+  groupWhitelist: [ Diona ]
   forcedColoring: false
   followSkinColor: false
   sprites:
@@ -111,8 +102,7 @@
 - type: marking
   id: DionaFirefly
   bodyPart: Chest
-  markingCategory: Chest
-  speciesRestriction: [ Diona ]
+  groupWhitelist: [ Diona ]
   forcedColoring: false
   followSkinColor: false
   sprites:
@@ -123,8 +113,7 @@
 - type: marking
   id: DionaPollenDust
   bodyPart: Head
-  markingCategory: Head
-  speciesRestriction: [ Diona ]
+  groupWhitelist: [ Diona ]
   forcedColoring: false
   followSkinColor: false
   sprites:
@@ -435,8 +424,7 @@
 - type: marking
   id: VoxCocktail
   bodyPart: Tail
-  markingCategory: Tail
-  speciesRestriction: [ Vox ]
+  groupWhitelist: [ Vox ]
   forcedColoring: false
   followSkinColor: false
   sprites:
@@ -452,8 +440,7 @@
 - type: marking
   id: VoxTailBalled
   bodyPart: Tail
-  markingCategory: Tail
-  speciesRestriction: [ Vox ]
+  groupWhitelist: [ Vox ]
   forcedColoring: true
   followSkinColor: true
   sprites:
@@ -463,8 +450,7 @@
 - type: marking
   id: VoxTailSplit
   bodyPart: Tail
-  markingCategory: Tail
-  speciesRestriction: [ Vox ]
+  groupWhitelist: [ Vox ]
   forcedColoring: true
   followSkinColor: true
   sprites:
@@ -474,8 +460,7 @@
 - type: marking
   id: VoxTailStripes
   bodyPart: Chest
-  markingCategory: Overlay
-  speciesRestriction: [ Vox ]
+  groupWhitelist: [ Vox ]
   forcedColoring: false
   followSkinColor: false
   sprites:
@@ -485,8 +470,7 @@
 - type: marking
   id: VoxLArmProsthetic
   bodyPart: LHand
-  markingCategory: Arms
-  speciesRestriction: [ Vox ]
+  groupWhitelist: [ Vox ]
   forcedColoring: false
   followSkinColor: false
   coloring:
@@ -501,8 +485,7 @@
 - type: marking
   id: VoxRArmProsthetic
   bodyPart: RHand
-  markingCategory: Arms
-  speciesRestriction: [ Vox ]
+  groupWhitelist: [ Vox ]
   forcedColoring: false
   followSkinColor: false
   coloring:
@@ -517,8 +500,7 @@
 - type: marking
   id: VoxBeakColor
   bodyPart: Snout
-  markingCategory: Snout
-  speciesRestriction: [ Vox ]
+  groupWhitelist: [ Vox ]
   forcedColoring: false
   followSkinColor: false
   sprites:
@@ -528,8 +510,7 @@
 - type: marking
   id: VoxBeakSplit
   bodyPart: Snout
-  markingCategory: Snout
-  speciesRestriction: [ Vox ]
+  groupWhitelist: [ Vox ]
   forcedColoring: false
   followSkinColor: false
   sprites:
@@ -541,8 +522,7 @@
 - type: marking
   id: VoxBeakTipped
   bodyPart: Snout
-  markingCategory: Snout
-  speciesRestriction: [ Vox ]
+  groupWhitelist: [ Vox ]
   forcedColoring: false
   followSkinColor: false
   sprites:
@@ -552,8 +532,7 @@
 - type: marking
   id: VoxChestPlumage
   bodyPart: Chest
-  markingCategory: Chest
-  speciesRestriction: [ Vox ]
+  groupWhitelist: [ Vox ]
   forcedColoring: false
   followSkinColor: false
   sprites:
@@ -563,8 +542,7 @@
 - type: marking
   id: VoxFootSpines
   bodyPart: Tail
-  markingCategory: Overlay
-  speciesRestriction: [ Vox ]
+  groupWhitelist: [ Vox ]
   forcedColoring: false
   followSkinColor: false
   sprites:
@@ -574,8 +552,7 @@
 - type: marking
   id: VoxFootGradientLFoot
   bodyPart: LFoot
-  markingCategory: Legs
-  speciesRestriction: [ Vox ]
+  groupWhitelist: [ Vox ]
   forcedColoring: false
   followSkinColor: false
   sprites:
@@ -585,8 +562,7 @@
 - type: marking
   id: VoxFootGradientRFoot
   bodyPart: RFoot
-  markingCategory: Legs
-  speciesRestriction: [ Vox ]
+  groupWhitelist: [ Vox ]
   forcedColoring: false
   followSkinColor: false
   sprites:
@@ -596,8 +572,7 @@
 - type: marking
   id: VoxLegGradientLLeg
   bodyPart: LLeg
-  markingCategory: Legs
-  speciesRestriction: [ Vox ]
+  groupWhitelist: [ Vox ]
   forcedColoring: false
   followSkinColor: false
   sprites:
@@ -607,8 +582,7 @@
 - type: marking
   id: VoxLegGradientRLeg
   bodyPart: RFoot
-  markingCategory: Legs
-  speciesRestriction: [ Vox ]
+  groupWhitelist: [ Vox ]
   forcedColoring: false
   followSkinColor: false
   sprites:
@@ -618,8 +592,7 @@
 - type: marking
   id: VoxHandGradientRHand
   bodyPart: RHand
-  markingCategory: Arms
-  speciesRestriction: [ Vox ]
+  groupWhitelist: [ Vox ]
   forcedColoring: false
   followSkinColor: false
   sprites:
@@ -633,8 +606,7 @@
 - type: marking
   id: VoxHandGradientLHand
   bodyPart: LHand
-  markingCategory: Arms
-  speciesRestriction: [ Vox ]
+  groupWhitelist: [ Vox ]
   forcedColoring: false
   followSkinColor: false
   sprites:
@@ -648,8 +620,7 @@
 - type: marking
   id: VoxHeadGradient
   bodyPart: Head
-  markingCategory: Head
-  speciesRestriction: [ Vox ]
+  groupWhitelist: [ Vox ]
   forcedColoring: false
   followSkinColor: false
   sprites:
@@ -663,8 +634,7 @@
 - type: marking
   id: VoxTailBell
   bodyPart: Tail
-  markingCategory: Overlay
-  speciesRestriction: [ Vox ]
+  groupWhitelist: [ Vox ]
   forcedColoring: false
   followSkinColor: false
   sprites:
@@ -676,8 +646,7 @@
 - type: marking
   id: VoxTailBack
   bodyPart: Tail
-  markingCategory: Tail
-  speciesRestriction: [ Vox ]
+  groupWhitelist: [ Vox ]
   forcedColoring: true
   followSkinColor: true
   sprites:
@@ -687,8 +656,7 @@
 - type: marking
   id: VoxTailLantern
   bodyPart: Tail
-  markingCategory: Overlay
-  speciesRestriction: [ Vox ]
+  groupWhitelist: [ Vox ]
   forcedColoring: false
   followSkinColor: false
   sprites:
@@ -699,8 +667,7 @@
 - type: marking
   id: VoxTailSingleStripe
   bodyPart: Chest
-  markingCategory: Overlay
-  speciesRestriction: [ Vox ]
+  groupWhitelist: [ Vox ]
   forcedColoring: false
   followSkinColor: false
   sprites:
@@ -710,8 +677,7 @@
 - type: marking
   id: VoxTailSmallPlume
   bodyPart: Tail
-  markingCategory: Overlay
-  speciesRestriction: [ Vox ]
+  groupWhitelist: [ Vox ]
   forcedColoring: false
   followSkinColor: false
   sprites:
@@ -721,8 +687,7 @@
 - type: marking
   id: VoxTailSpines
   bodyPart: Tail
-  markingCategory: Overlay
-  speciesRestriction: [ Vox ]
+  groupWhitelist: [ Vox ]
   forcedColoring: false
   followSkinColor: false
   sprites:
@@ -732,8 +697,7 @@
 - type: marking
   id: VoxArmsStripesLHand
   bodyPart: LArm
-  markingCategory: Arms
-  speciesRestriction: [ Vox ]
+  groupWhitelist: [ Vox ]
   forcedColoring: false
   followSkinColor: false
   sprites:
@@ -743,8 +707,7 @@
 - type: marking
   id: VoxArmsStripesRHand
   bodyPart: RArm
-  markingCategory: Arms
-  speciesRestriction: [ Vox ]
+  groupWhitelist: [ Vox ]
   forcedColoring: false
   followSkinColor: false
   sprites:
@@ -754,8 +717,7 @@
 - type: marking
   id: VoxLegsStripesLLeg
   bodyPart: LLeg
-  markingCategory: Legs
-  speciesRestriction: [ Vox ]
+  groupWhitelist: [ Vox ]
   forcedColoring: false
   followSkinColor: false
   sprites:
@@ -765,8 +727,7 @@
 - type: marking
   id: VoxLegsStripesRLeg
   bodyPart: RFoot
-  markingCategory: Legs
-  speciesRestriction: [ Vox ]
+  groupWhitelist: [ Vox ]
   forcedColoring: false
   followSkinColor: false
   sprites:
@@ -776,8 +737,7 @@
 - type: marking
   id: VoxChains
   bodyPart: Tail
-  markingCategory: Overlay
-  speciesRestriction: [ Vox ]
+  groupWhitelist: [ Vox ]
   forcedColoring: false
   followSkinColor: false
   sprites:
@@ -787,8 +747,7 @@
 - type: marking
   id: VoxSunAndMoon
   bodyPart: Tail
-  markingCategory: Overlay
-  speciesRestriction: [ Vox ]
+  groupWhitelist: [ Vox ]
   forcedColoring: false
   followSkinColor: false
   sprites:
@@ -798,8 +757,7 @@
 - type: marking
   id: VoxCheeks
   bodyPart: Head
-  markingCategory: Head
-  speciesRestriction: [ Vox ]
+  groupWhitelist: [ Vox ]
   forcedColoring: false
   followSkinColor: false
   sprites:
@@ -809,8 +767,7 @@
 - type: marking
   id: VoxBelly
   bodyPart: Chest
-  markingCategory: Chest
-  speciesRestriction: [ Vox ]
+  groupWhitelist: [ Vox ]
   forcedColoring: false
   followSkinColor: false
   sprites:
@@ -820,8 +777,7 @@
 - type: marking
   id: VitiligoHeadL
   bodyPart: Head
-  markingCategory: Head
-  speciesRestriction: [ Human, Dwarf, Oni, Goblin, Felinid] # Frontier: add Oni, Goblin, Felinid
+  groupWhitelist: [ Human, Oni, Goblin, Felinid] # Frontier: add Oni, Goblin, Felinid
   forcedColoring: true
   coloring:
     default:
@@ -835,8 +791,7 @@
 - type: marking
   id: VitiligoHeadR
   bodyPart: Head
-  markingCategory: Head
-  speciesRestriction: [ Human, Dwarf, Oni, Goblin, Felinid] # Frontier: add Oni, Goblin, Felinid
+  groupWhitelist: [ Human, Oni, Goblin, Felinid] # Frontier: add Oni, Goblin, Felinid
   forcedColoring: true
   coloring:
     default:
@@ -850,8 +805,7 @@
 - type: marking
   id: VitiligoHeadJaw
   bodyPart: Head
-  markingCategory: Head
-  speciesRestriction: [ Human, Dwarf, Oni, Goblin, Felinid] # Frontier: add Oni, Goblin, Felinid
+  groupWhitelist: [ Human, Oni, Goblin, Felinid] # Frontier: add Oni, Goblin, Felinid
   forcedColoring: true
   coloring:
     default:
@@ -865,8 +819,7 @@
 - type: marking
   id: VitiligoChestF
   bodyPart: Chest
-  markingCategory: Chest
-  speciesRestriction: [ Human, Dwarf, Oni, Goblin, Felinid] # Frontier: add Oni, Goblin, Felinid
+  groupWhitelist: [ Human, Oni, Goblin, Felinid] # Frontier: add Oni, Goblin, Felinid
   forcedColoring: true
   coloring:
     default:
@@ -880,8 +833,7 @@
 - type: marking
   id: VitiligoChestSpots
   bodyPart: Chest
-  markingCategory: Chest
-  speciesRestriction: [ Human, Dwarf, Oni, Goblin, Felinid] # Frontier: add Oni, Goblin, Felinid
+  groupWhitelist: [ Human, Oni, Goblin, Felinid] # Frontier: add Oni, Goblin, Felinid
   forcedColoring: true
   coloring:
     default:
@@ -895,8 +847,7 @@
 - type: marking
   id: VitiligoArmR
   bodyPart: RArm
-  markingCategory: Arms
-  speciesRestriction: [ Human, Dwarf, Oni, Goblin, Felinid] # Frontier: add  Oni, Felinid
+  groupWhitelist: [ Human, Oni, Goblin, Felinid] # Frontier: add  Oni, Felinid
   forcedColoring: true
   coloring:
     default:
@@ -910,8 +861,7 @@
 - type: marking
   id: VitiligoArmL
   bodyPart: LArm
-  markingCategory: Arms
-  speciesRestriction: [ Human, Dwarf, Oni, Goblin, Felinid] # Frontier: add  Oni, Felinid
+  groupWhitelist: [ Human, Oni, Goblin, Felinid] # Frontier: add  Oni, Felinid
   forcedColoring: true
   coloring:
     default:
@@ -925,8 +875,7 @@
 - type: marking
   id: VitiligoHandR
   bodyPart: RHand
-  markingCategory: Arms
-  speciesRestriction: [ Human, Dwarf, Oni, Goblin, Felinid] # Frontier: add  Oni, Felinid
+  groupWhitelist: [ Human, Oni, Goblin, Felinid] # Frontier: add  Oni, Felinid
   forcedColoring: true
   coloring:
     default:
@@ -940,8 +889,7 @@
 - type: marking
   id: VitiligoHandL
   bodyPart: LHand
-  markingCategory: Arms
-  speciesRestriction: [ Human, Dwarf, Oni, Goblin, Felinid] # Frontier: add  Oni, Felinid
+  groupWhitelist: [ Human, Oni, Goblin, Felinid] # Frontier: add  Oni, Felinid
   forcedColoring: true
   coloring:
     default:
@@ -955,8 +903,7 @@
 - type: marking
   id: VitiligoLegR
   bodyPart: RFoot
-  markingCategory: Legs
-  speciesRestriction: [ Human, Dwarf, Oni, Goblin, Felinid] # Frontier: add  Oni, Felinid
+  groupWhitelist: [ Human, Oni, Goblin, Felinid] # Frontier: add  Oni, Felinid
   forcedColoring: true
   coloring:
     default:
@@ -970,8 +917,7 @@
 - type: marking
   id: VitiligoLegL
   bodyPart: LLeg
-  markingCategory: Legs
-  speciesRestriction: [ Human, Dwarf, Oni, Goblin, Felinid] # Frontier: add  Oni, Felinid
+  groupWhitelist: [ Human, Oni, Goblin, Felinid] # Frontier: add  Oni, Felinid
   forcedColoring: true
   coloring:
     default:

@@ -88,7 +88,6 @@
 
 - type: marking # Aurora's Song - Moved slime markings to overlay to allow for animal heads
   bodyPart: Eyes
-  markingCategory: Overlay
   id: TattooSlimeEyeLeft
   groupWhitelist: [Slime]
   sprites:

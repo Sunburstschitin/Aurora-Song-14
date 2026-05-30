@@ -181,8 +181,7 @@
 - type: marking # Aurora's Song - Moved slime's markings to overlay
   id: SlimeSmileScars
   bodyPart: Head
-  markingCategory: Overlay
-  speciesRestriction: [SlimePerson]
+  groupWhitelist: [Slime]
   forcedColoring: true # Aurora's Song
   followSkinColor: false
   sprites:
@@ -202,8 +201,7 @@
 - type: marking # Aurora's Song - Moved slime markings to overlay
   id: HeadSlimeTwisting
   bodyPart: Head
-  markingCategory: Overlay
-  speciesRestriction: [SlimePerson]
+  groupWhitelist: [Slime]
   forcedColoring: true # Aurora's Song
   followSkinColor: false
   sprites:

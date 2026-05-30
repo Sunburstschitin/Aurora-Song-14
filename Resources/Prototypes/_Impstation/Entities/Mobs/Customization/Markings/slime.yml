@@ -1,8 +1,7 @@
 - type: marking
   id: SlimeNose
   bodyPart: Head
-  markingCategory: Overlay # Aurora's Song - Moved slime's markings to overlay
-  speciesRestriction: [SlimePerson]
+  groupWhitelist: [Slime]
   forcedColoring: true
   followSkinColor: true
   sprites:
@@ -12,9 +11,8 @@
 - type: marking
   id: SlimeMouth
   bodyPart: Head
-  markingCategory: Overlay # Aurora's Song - Moved slime's markings to overlay
-  speciesRestriction: [SlimePerson]
-  followSkinColor: true
+  groupWhitelist: [Slime]
+  forcedColoring: true
   sprites:
   - sprite: _Impstation/Mobs/Customization/slime_parts.rsi
     state: mouth
@@ -22,9 +20,8 @@
 - type: marking
   id: SlimeBrain
   bodyPart: Head
-  markingCategory: Overlay # Aurora's Song - Moved slime's markings to overlay
-  speciesRestriction: [SlimePerson]
-  followSkinColor: true
+  groupWhitelist: [Slime]
+  forcedColoring: true
   sprites:
   - sprite: _Impstation/Mobs/Customization/slime_parts.rsi
     state: brain
@@ -32,8 +29,7 @@
 - type: marking # TODO: If we ever figure out how to make markings use shaders, make this unshaded! For now, this at least gives the right impression.
   id: SlimeEyeglow
   bodyPart: Eyes
-  markingCategory: Overlay # Aurora's Song - Moved slime's markings to overlay
-  speciesRestriction: [SlimePerson]
+  groupWhitelist: [Slime]
   coloring:
     default:
       type:
@@ -47,9 +43,8 @@
 - type: marking
   id: SlimeLungs
   bodyPart: Chest
-  markingCategory: Chest
-  speciesRestriction: [SlimePerson]
-  followSkinColor: true
+  groupWhitelist: [Slime]
+  forcedColoring: true
   sprites:
   - sprite: _Impstation/Mobs/Customization/slime_parts.rsi
     state: lungs
@@ -57,9 +52,8 @@
 - type: marking
   id: SlimeCore
   bodyPart: Chest
-  markingCategory: Chest
-  speciesRestriction: [SlimePerson]
-  followSkinColor: true
+  groupWhitelist: [Slime]
+  forcedColoring: true
   sprites:
   - sprite: _Impstation/Mobs/Customization/slime_parts.rsi
     state: core
