@@ -5,7 +5,8 @@ marking-bubble-bubble = Bubbles
 
 marking-fishbowl = Fishbowl
 marking-fishbowl-fishbowl1 = Fish
-marking-fishbowl-fishbowl2 = Fish bubbles
+marking-fishbowl-fishbowl2 = Fish Bubbles
+# Frontier: bubbles < Bubbles
 
 marking-SlimeBonechest = Floating Ribcage
 marking-SlimeBonechest-bone = Floating Ribcage
