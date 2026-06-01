@@ -209,8 +209,8 @@ public sealed class MetabolizerSystem : EntitySystem
             var actualEntity = ent.Comp2?.Body ?? solutionOwner.Value;
 
             // Aurora's Song - Check for tag whitelist to skip effects per-tag
-            var isWhitelisted = !TryComp<MetabolizerTagWhitelistComponent>(ent, out var tagWhitelist) || // Missing comp = whitelisted
-                                tagWhitelist.Tags.Overlaps(proto.Tags) && tagWhitelist.Stages.Contains(stage.Id); // Has to match stage to be whitelisted
+            var isWhitelisted = !(TryComp<MetabolizerTagWhitelistComponent>(ent, out var tagWhitelist) && tagWhitelist.Stages.Contains(stage.Id)) || // Missing comp = whitelisted
+                                tagWhitelist.Tags.Overlaps(proto.Tags); // Has to match stage to be whitelisted
 
             // do all effects, if conditions apply
             foreach (var effect in entry.Effects)
