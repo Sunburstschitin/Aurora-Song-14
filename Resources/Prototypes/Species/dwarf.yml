@@ -5,5 +5,5 @@
   prototype: MobDwarf
   sprites: MobHumanSprites
   markingLimits: MobHumanMarkingLimits
-  dollPrototype: MobDwarfDummy
-  skinColoration: HumanAnimal # DEN
+  dollPrototype: AppearanceDwarf
+  skinColoration: HumanAnimal # Aurora's Song - Replaced with HumanAnimal

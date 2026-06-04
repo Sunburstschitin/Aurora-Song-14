@@ -6,8 +6,8 @@
   sprites: MobDionaSprites
   defaultSkinTone: "#cdb369"
   markingLimits: MobDionaMarkingLimits
-  dollPrototype: MobDionaDummy
-  skinColoration: Hues
+  dollPrototype: AppearanceDiona
+  skinColoration: HumanAnimal # Aurora's Song - Replaced with HumanAnimal
   maleFirstNames: NamesDionaFirst
   femaleFirstNames: NamesDionaFirst
   lastNames: NamesDionaLast
@@ -44,6 +44,12 @@
       required: false
     HeadSide:
       points: 2 #imp
+      required: false
+    UndergarmentTop:
+      points: 1
+      required: false
+    UndergarmentBottom:
+      points: 1
       required: false
     Chest:
       points: 2 #imp

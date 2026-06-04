@@ -6,8 +6,8 @@
   prototype: MobGoblin
   sprites: MobGoblinSprites
   markingLimits: MobGoblinMarkingLimits
-  dollPrototype: MobGoblinDummy
-  skinColoration: HumanToned #Possible values: TintedHues, Hues, HumanToned
+  dollPrototype: AppearanceGoblin
+  skinColoration: HumanAnimal # Aurora's Song - Replaced with HumanAnimal
   maleFirstNames: NamesGoblinFirstMale
   femaleFirstNames: NamesGoblinFirstFemale
   lastNames: NamesGoblinLast

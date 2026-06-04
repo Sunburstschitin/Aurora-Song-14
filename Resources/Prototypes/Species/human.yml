@@ -5,8 +5,8 @@
   prototype: MobHuman
   sprites: MobHumanSprites
   markingLimits: MobHumanMarkingLimits
-  dollPrototype: MobHumanDummy
-  skinColoration: HumanAnimal # DEN
+  dollPrototype: AppearanceHuman
+  skinColoration: HumanAnimal # Aurora's Song - Replaced with HumanAnimal
 
 # The lack of a layer means that
 # this person cannot have round-start anything

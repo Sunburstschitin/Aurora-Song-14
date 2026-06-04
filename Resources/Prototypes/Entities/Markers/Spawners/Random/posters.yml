@@ -195,6 +195,7 @@
       - PosterLegitOppenhopper
       - PosterLegitTyrone
       - PosterLegitHelio
+      - PosterLegitBotanyFear
         # Frontier
       - NFPosterLegitMagnusWatching
       - NFPosterLegitGoblinTinkerer
@@ -207,5 +208,6 @@
         # End Frontier
         # Aurora's Song
       - ASPosterLegitAuroraSector
+      - ASPosterLegitIHSLogo
         # End Aurora's Song
     chance: 1

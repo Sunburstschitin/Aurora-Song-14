@@ -6,8 +6,8 @@
   sprites: MobOviniaSprites
   defaultSkinTone: "#ffffff"
   markingLimits: MobOviniaMarkingLimits
-  dollPrototype: MobOviniaDummy
-  skinColoration: Hues
+  dollPrototype: AppearanceOvinia
+  skinColoration: HumanAnimal # Aurora's Song - Replaced with HumanAnimal
   maleFirstNames: NamesFirstMale
   femaleFirstNames: NamesFirstFemale
   lastNames: NamesLast

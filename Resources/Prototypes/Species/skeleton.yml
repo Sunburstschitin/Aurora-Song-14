@@ -8,8 +8,8 @@
   markingLimits: MobHumanMarkingLimits
   maleFirstNames: NamesSkeletonFirst
   femaleFirstNames: NamesSkeletonFirst
-  dollPrototype: MobSkeletonPersonDummy
-  skinColoration: TintedHues
+  dollPrototype: AppearanceSkeletonPerson
+  skinColoration: HumanAnimal # Aurora's Song - Replaced with HumanAnimal
 
 - type: speciesBaseSprites
   id: MobSkeletonSprites

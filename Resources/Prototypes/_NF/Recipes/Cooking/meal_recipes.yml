@@ -231,14 +231,14 @@
   - Assembler
 
 - type: microwaveMealRecipe
-  id: RecipeSausageRawStomachRat
+  id: RecipeSausageRawStomachAnimal # Aurora's Song - RecipeSausageRawStomachRat>RecipeSausageRawStomachAnimal
   name: raw stomach sausage recipe
   result: FoodSausageRaw
   resultCount: 3
   time: 10
   group: Savory # TODO: move to ingredients
   solids:
-    OrganRatStomach: 1
+    OrganAnimalStomach: 1 # Aurora's Song - OrganRatStomach>OrganAnimalStomach - There is no longer a rat stomach
   reagents:
     UncookedAnimalProteins: 9
   recipeType:
@@ -815,21 +815,22 @@
 
 # Other
 
-- type: microwaveMealRecipe
-  id: RecipeCatCrispy
-  name: cat crispy recipe
-  result: MobCatCrispy
-  time: 15
-  group: Savory
-  reagents:
-    Cornoil: 10
-    Cognizine: 5
-  solids:
-    FoodMealFries: 1
-    FoodOnionRings: 1
-    OrganAnimalHeart: 1
-  recipeType:
-  - Assembler
+# Aurora's Song - Disable crispy cat for now
+# - type: microwaveMealRecipe
+#   id: RecipeCatCrispy
+#   name: cat crispy recipe
+#   result: MobCatCrispy
+#   time: 15
+#   group: Savory
+#   reagents:
+#     Cornoil: 10
+#     Cognizine: 5
+#   solids:
+#     FoodMealFries: 1
+#     FoodOnionRings: 1
+#     OrganAnimalHeart: 1
+#   recipeType:
+#   - Assembler
 
 - type: microwaveMealRecipe
   id: RecipeDragonOmelette

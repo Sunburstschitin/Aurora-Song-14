@@ -3,10 +3,10 @@
   name: species-name-oni
   roundStart: true
   prototype: MobOni
-  dollPrototype: MobOniDummy
+  dollPrototype: AppearanceOni
   markingLimits: MobOniMarkingLimits
   sprites: MobHumanSprites
-  skinColoration: Hues
+  skinColoration: HumanAnimal # Aurora's Song - Replaced with HumanAnimal
   maleFirstNames: NamesOniMale
   femaleFirstNames: NamesOniFemale
   lastNames: NamesOniLocation

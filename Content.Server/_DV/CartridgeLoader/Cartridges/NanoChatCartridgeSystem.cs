@@ -13,7 +13,6 @@ using Content.Server.Administration.Logs;
 using Content.Server.CartridgeLoader;
 using Content.Server.Power.Components;
 using Content.Server.Radio;
-using Content.Server.Radio.Components;
 using Content.Server.Station.Systems;
 using Content.Shared.Access.Components;
 using Content.Shared.CartridgeLoader;
@@ -71,16 +70,13 @@ public sealed class NanoChatCartridgeSystem : EntitySystem
 
     private void OnActiveProgramChanged(Entity<CartridgeLoaderComponent> ent, ref ActiveProgramChangedEvent args)
     {
-        if (!TryComp<CartridgeComponent>(ent, out var cartridge) ||
-            cartridge.LoaderUid is not { } pda ||
-            !TryComp<CartridgeLoaderComponent>(pda, out var loader) ||
-            !GetCardEntity(pda, out var card))
-        {
+        if (!_pdaQuery.TryGetComponent(ent, out var pda) || pda.ContainedId is not { } cardUid)
             return;
-        }
 
-        // if you switch to another program or close the pda UI, allow notifications for the selected chat
-        _nanoChat.SetClosed((card, card.Comp), loader.ActiveProgram != ent.Owner || !_ui.IsUiOpen(pda, PdaUiKey.Key));
+        if (!_cardQuery.TryGetComponent(cardUid, out var nanoChatCard))
+            return;
+
+        _nanoChat.SetClosed((cardUid, nanoChatCard), !HasComp<NanoChatCartridgeComponent>(args.NewActiveProgram));
     }
 
     public override void Update(float frameTime)
