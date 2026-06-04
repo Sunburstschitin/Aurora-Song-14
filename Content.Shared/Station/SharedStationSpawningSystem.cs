@@ -360,24 +360,6 @@ public abstract class SharedStationSpawningSystem : EntitySystem
         }
     }
 
-    public bool GetProfile(EntityUid? uid, [NotNullWhen(true)] out HumanoidCharacterProfile? profile)
-    {
-        if (!TryComp(uid, out HumanoidAppearanceComponent? appearance))
-        {
-            profile = null;
-            return false;
-        }
-
-        if (appearance.LastProfileLoaded is { } lastProfileLoaded)
-        {
-            profile = lastProfileLoaded;
-            return true;
-        }
-
-        profile = HumanoidCharacterProfile.DefaultWithSpecies(appearance.Species);
-        return true;
-    }
-
     /// <summary>
     /// Function to equip an entity with PDA cartridges.
     /// If not possible, will delete them.

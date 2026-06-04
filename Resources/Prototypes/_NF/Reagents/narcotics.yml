@@ -7,7 +7,7 @@
   flavor: salty
   color: "#794c00"
   metabolisms:
-    Narcotic:
+    Bloodstream: # Aurora's Song - Narcotic>Bloodstream
       effects:
       # Effects for non-dwarfs
       - !type:Emote
@@ -65,7 +65,7 @@
   - !type:PlantAdjustHealth
     amount: -1
   metabolisms:
-    Narcotic:
+    Bloodstream: # Aurora's Song - Narcotic>Bloodstream
       effects:
       # Effects for goblins
       - !type:GenericStatusEffect

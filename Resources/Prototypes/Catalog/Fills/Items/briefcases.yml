@@ -95,17 +95,6 @@
       storagebase:
         id: NFWeaponShotgunBulldog # Aurora's Song - WeaponShotgunBulldog>NFWeaponShotgunBulldog
 
-# Aurora's Song - Disable Estoc
-#- type: entity
-#  id: BriefcaseWeaponDMRFilled
-#  parent: BriefcaseWeapon
-#  name: secure estoc case
-#  components:
-#  - type: EntityTableContainerFill
-#    containers:
-#      storagebase:
-#        id: WeaponRifleEstoc
-
 - type: entity
   id: BriefcaseWeaponChinaLakeFilled
   parent: BriefcaseWeapon

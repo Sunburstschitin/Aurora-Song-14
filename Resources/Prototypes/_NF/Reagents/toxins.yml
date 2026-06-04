@@ -18,7 +18,7 @@
   slipData:
     requiredSlipSpeed: 3.5
   metabolisms:
-    Drink:
+    Digestion: # Aurora's Song - Drink>Digestion
       effects:
       # Shouldn't drink this.
       - !type:SatiateThirst
@@ -42,7 +42,7 @@
   - !type:PlantAdjustHealth
     amount: -5
   metabolisms:
-    Poison:
+    Bloodstream: # Aurora's Song - Poison>Bloodstream
       metabolismRate : 0.05
       effects:
       - !type:SatiateThirst
