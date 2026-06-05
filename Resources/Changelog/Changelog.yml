@@ -5402,3 +5402,13 @@ Entries:
   id: 9516
   time: '2026-06-04T23:56:38.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1065
+- author: Oberonics
+  changes:
+    - type: Add
+      message: >-
+        Ports Private holoprojectors by Dirius77. They block vision and have a
+        description so you can tell everyone exactly what to expect from your
+        ship or scene. Can be found in your loadout or made in a autolathe.
+  id: 9517
+  time: '2026-06-05T00:00:07.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/949
