@@ -20,7 +20,7 @@
       limit: 1
       required: false
     enum.HumanoidVisualLayers.HeadSide:
-      limit: 1
+      limit: 2 # Aurora's Song - So earrings don't detonate the ears
       required: true
       default: [ AvaliEarsBase ]
     enum.HumanoidVisualLayers.Chest:
@@ -46,30 +46,28 @@
   components:
   - type: Inventory
     speciesId: Avali
-  - type: EntityTableContainerFill
-    containers:
-      body_organs: !type:AllSelector
-        children:
-        - id: OrganAvaliTorso
-        - id: OrganAvaliHead
-        - id: OrganAvaliArmLeft
-        - id: OrganAvaliArmRight
-        - id: OrganAvaliHandRight
-        - id: OrganAvaliHandLeft
-        - id: OrganAvaliLegLeft
-        - id: OrganAvaliLegRight
-        - id: OrganAvaliFootLeft
-        - id: OrganAvaliFootRight
-        - id: OrganAvaliBrain
-        - id: OrganAvaliEyes
-        - id: OrganAvaliTongue
-        - id: OrganAvaliAppendix
-        - id: OrganAvaliEars
-        - id: OrganAvaliLungs
-        - id: OrganAvaliHeart
-        - id: OrganAvaliStomach
-        - id: OrganAvaliLiver
-        - id: OrganAvaliKidneys
+  - type: InitialBody
+    organs:
+      Torso: OrganAvaliTorso
+      Head: OrganAvaliHead
+      ArmLeft: OrganAvaliArmLeft
+      ArmRight: OrganAvaliArmRight
+      HandRight: OrganAvaliHandRight
+      HandLeft: OrganAvaliHandLeft
+      LegLeft: OrganAvaliLegLeft
+      LegRight: OrganAvaliLegRight
+      FootLeft: OrganAvaliFootLeft
+      FootRight: OrganAvaliFootRight
+      Brain: OrganAvaliBrain
+      Eyes: OrganAvaliEyes
+      Tongue: OrganAvaliTongue
+      Appendix: OrganAvaliAppendix
+      Ears: OrganAvaliEars
+      Lungs: OrganAvaliLungs
+      Heart: OrganAvaliHeart
+      Stomach: OrganAvaliStomach
+      Liver: OrganAvaliLiver
+      Kidneys: OrganAvaliKidneys
   - type: HumanoidProfile
     species: Avali
 
