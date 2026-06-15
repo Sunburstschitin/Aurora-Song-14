@@ -1407,3 +1407,10 @@ Entries:
   id: 9537
   time: '2026-06-15T02:10:57.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1143
+- author: ZigTag
+  changes:
+    - type: Fix
+      message: harpies can eat raw meat again
+  id: 9538
+  time: '2026-06-15T02:34:13.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1147
