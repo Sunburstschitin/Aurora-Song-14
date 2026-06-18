@@ -1471,3 +1471,12 @@ Entries:
   id: 9545
   time: '2026-06-18T03:03:40.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1158
+- author: snaviian
+  changes:
+    - type: Add
+      message: >-
+        Added 68 new phrases for the AAC tablet, including location names,
+        common words and punctuation.
+  id: 9546
+  time: '2026-06-18T03:38:32.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1069
