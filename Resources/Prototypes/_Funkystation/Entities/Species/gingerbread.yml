@@ -1,0 +1,8 @@
+- type: species
+  id: Gingerbread
+  name: species-name-gingerbread
+  roundStart: true # Aurora's Song - LALALALA ADDED FUNNY COOKIES INTO BEING PLAYABLE
+  prototype: MobGingerbread
+  dollPrototype: AppearanceGingerbread
+  skinColoration: HumanAnimal # Aurora's Song - Replaced with HumanAnimal
+  defaultSkinTone: "#9a7c5a"
