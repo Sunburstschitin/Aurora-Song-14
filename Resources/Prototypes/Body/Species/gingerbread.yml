@@ -2,7 +2,7 @@
   parent: Undergarments
   id: Gingerbread
   onlyGroupWhitelisted: false
-  points:
+  limit:
     enum.HumanoidVisualLayers.Hair:
       limit: 1
       required: false
@@ -71,16 +71,16 @@
       LegRight: OrganGingerbreadLegRight
       FootLeft: OrganGingerbreadFootLeft
       FootRight: OrganGingerbreadFootRight
-      Brain: OrganHumanBrain
-      Eyes: OrganHumanEyes
+      Brain: OrganGingerbreadBrain
+      Eyes: OrganGingerbreadEyes
       Tongue: OrganHumanTongue
       Appendix: OrganHumanAppendix
       Ears: OrganHumanEars
-      Lungs: OrganHumanLungs
-      Heart: OrganHumanHeart
-      Stomach: OrganHumanStomach
-      Liver: OrganHumanLiver
-      Kidneys: OrganHumanKidneys
+      Lungs: OrganGingerbreadLungs
+      Heart: OrganGingerbreadHeart
+      Stomach: OrganGingerbreadStomach
+      Liver: OrganGingerbreadLiver
+      Kidneys: OrganGingerbreadKidneys
   - type: HumanoidProfile
     species: Gingerbread
 
