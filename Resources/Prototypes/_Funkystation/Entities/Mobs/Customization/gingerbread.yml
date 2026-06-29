@@ -81,7 +81,6 @@
   id: LSnappedLeg
   bodyPart: LLeg
   groupWhitelist: [Gingerbread]
-  followSkinColor: true
   sprites:
     - sprite: _Funkystation/Mobs/Customization/gingerbread_parts.rsi
       state: l_snapped_leg
@@ -90,7 +89,6 @@
   id: RSnappedLeg
   bodyPart: RLeg
   groupWhitelist: [Gingerbread]
-  followSkinColor: true
   sprites:
     - sprite: _Funkystation/Mobs/Customization/gingerbread_parts.rsi
       state: r_snapped_leg
@@ -109,7 +107,6 @@
   id: BodyIcingbuttons
   bodyPart: Chest
   groupWhitelist: [Gingerbread]
-  followSkinColor: true
   sprites:
     - sprite: _Funkystation/Mobs/Customization/gingerbread_parts.rsi
       state: body_icingbuttons
@@ -136,7 +133,6 @@
   id: FaceBlush
   bodyPart: HeadSide
   groupWhitelist: [Gingerbread]
-  followSkinColor: true
   sprites:
     - sprite: _Funkystation/Mobs/Customization/gingerbread_parts.rsi
       state: face_blush
