@@ -136,6 +136,32 @@
   suffix: gingerbread
 
 - type: entity
+  id: OrganGingerbreadMetabolizer
+  abstract: true
+  components:
+  - type: Metabolizer
+    metabolizerTypes: [ Human ]
+
+- type: entity
+  parent: OrganGingerbread
+  id: OrganGingerbreadInternal
+  abstract: true
+  components:
+  - type: Sprite
+    sprite: _Funkystation/Mobs/Species/Gingerbread/organs.rsi
+
+- type: entity
+  id: OrganGingerbreadVisual
+  abstract: true
+  components:
+  - type: VisualOrgan
+    data:
+      sprite: _Funkystation/Mobs/Species/Gingerbread/parts.rsi
+  - type: VisualOrganMarkings
+    markingData:
+      group: Gingerbread
+
+- type: entity
   parent: OrganGingerbread
   id: OrganGingerbreadExternal
   abstract: true
@@ -188,6 +214,34 @@
 - type: entity
   parent: [ OrganBaseFootRight, OrganGingerbreadExternal ]
   id: OrganGingerbreadFootRight
+
+- type: entity
+  parent: [ OrganBaseHeart, OrganGingerbreadInternal, OrganGingerbreadMetabolizer ]
+  id: OrganGingerbreadHeart
+
+- type: entity
+  parent: [ OrganBaseStomach, OrganGingerbreadInternal, OrganGingerbreadMetabolizer ]
+  id: OrganGingerbreadStomach
+
+- type: entity
+  parent: [ OrganGingerbreadVisual, OrganBaseEyes, OrganGingerbreadInternal ]
+  id: OrganGingerbreadEyes
+
+- type: entity
+  parent: [ OrganBaseBrain, OrganGingerbreadInternal ]
+  id: OrganGingerbreadBrain
+
+- type: entity
+  parent: [ OrganBaseLungs, OrganGingerbreadInternal, OrganGingerbreadMetabolizer ]
+  id: OrganGingerbreadLungs
+
+- type: entity
+  parent: [ OrganBaseLiver, OrganGingerbreadInternal, OrganGingerbreadMetabolizer ]
+  id: OrganGingerbreadLiver
+
+- type: entity
+  parent: [ OrganBaseKidneys, OrganGingerbreadInternal, OrganGingerbreadMetabolizer ]
+  id: OrganGingerbreadKidneys
 
 - type: entity
   name: gingerbread man
