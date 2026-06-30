@@ -2,7 +2,7 @@
   parent: Undergarments
   id: Gingerbread
   onlyGroupWhitelisted: false
-  limit:
+  limits:
     enum.HumanoidVisualLayers.Hair:
       limit: 1
       required: false
