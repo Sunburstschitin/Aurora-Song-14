@@ -487,3 +487,236 @@
     sexStateOverrides:
       Male: torso_m
       Female: torso_f
+
+- type: entity
+  parent: [ OrganBase, OrganEdible ]
+  id: OrganSweetsBrain
+  name: pudding brain
+  description: The source of incredible, unending fudginess. Yum!
+  abstract: true
+  components:
+  - type: GibbableOrgan
+  - type: Organ
+    category: Brain
+  - type: Sprite
+    layers:
+    - state: brain
+  - type: Item
+    heldPrefix: brain
+  - type: Input
+    context: "ghost"
+  - type: Brain
+  - type: InputMover
+  - type: Examiner
+  - type: BlockMovement
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 5
+        reagents:
+        - ReagentId: Theobromine
+          Quantity: 5
+  - type: BadFood
+  - type: FoodSequenceElement
+    entries:
+      Burger: Brain
+      Taco: Brain
+  - type: FlavorProfile
+    flavors:
+     - sweet
+     - chocolate
+
+- type: entity
+  parent: [ OrganBase, OrganEdible ]
+  id: OrganSweetsLiver
+  name: brownie liver
+  abstract: true
+  description: A rich brownie square that filters stray crumbs and off-flavors. Warm, gooey, and medically vital.
+  components:
+  - type: GibbableOrgan
+  - type: Organ
+    category: Liver
+  - type: Sprite
+    layers:
+    - state: liver
+  - type: Item
+    heldPrefix: liver
+  - type: Metabolizer
+    maxReagents: 1
+    stages: [ Metabolites ]
+    ratemodifier: 0.1
+  - type: FlavorProfile
+    flavors:
+     - sweet
+     - mrebrownie
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 5
+        reagents:
+        - ReagentId: Theobromine
+          Quantity: 5
+
+- type: entity
+  parent: [ OrganBase, OrganEdible ]
+  id: OrganSweetsEyes
+  name: gummy eyes
+  abstract: true
+  description: Two glossy gummy candies that somehow see the world. Wiggle them and they jiggle right back.
+  components:
+  - type: GibbableOrgan
+  - type: Organ
+    category: Eyes
+  - type: Sprite
+    layers:
+    - state: eyeball-l
+    - state: eyeball-r
+  - type: VisualOrgan
+    layer: enum.HumanoidVisualLayers.Eyes
+    data:
+      sprite: Mobs/Customization/eyes.rsi
+      state: eyes
+  - type: VisualOrganMarkings
+    markingData:
+      layers:
+      - Eyes
+  - type: FlavorProfile
+    flavors:
+     - sweet
+     - fruity
+     - jelly
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 5
+        reagents:
+        - ReagentId: Sugar
+          Quantity: 5
+
+- type: entity
+  parent: [ OrganBase, OrganEdible ]
+  id: OrganSweetsLungs
+  name: spongecake lungs
+  abstract: true
+  description: Soft, airy pastry sacs that inhale oxygen and exhale the smell of a warm bakery.
+  components:
+  - type: GibbableOrgan
+  - type: Organ
+    category: Lungs
+  - type: Lung
+  - type: Metabolizer
+    stages: [ Respiration ]
+  - type: SolutionContainerManager
+    solutions:
+      Lung:
+        maxVol: 100.0
+        canReact: false
+      food:
+        maxVol: 5
+        reagents:
+        - ReagentId: Butter
+          Quantity: 5
+  - type: Sprite
+    layers:
+    - state: lung-l
+    - state: lung-r
+  - type: Item
+    heldPrefix: lungs
+  - type: FlavorProfile
+    flavors:
+     - sweet
+     - muffin
+
+- type: entity
+  parent: [ OrganBase, OrganEdible ]
+  id: OrganSweetsHeart
+  name: candy apple heart
+  abstract: true
+  description: A candy-coated apple that thumps with sticky determination. Beats louder when near open flames.
+  components:
+  - type: GibbableOrgan
+  - type: Organ
+    category: Heart
+  - type: Sprite
+    layers:
+    - state: heart-on
+  - type: Metabolizer
+    maxReagents: 2
+    stages: [ Bloodstream ]
+  - type: FlavorProfile
+    flavors:
+     - sweet
+     - apple
+     - syrupy
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 5
+        reagents:
+        - ReagentId: Sugar
+          Quantity: 5
+
+- type: entity
+  parent: [ OrganBase, OrganEdible ]
+  id: OrganSweetsStomach
+  name: sour candy stomach
+  abstract: true
+  description: A lemon sour candy that handles digestion. Tart enough to melt almost anything.
+  components:
+  - type: GibbableOrgan
+  - type: Organ
+    category: Stomach
+  - type: Stomach
+  - type: SolutionContainerManager
+    solutions:
+      stomach:
+        maxVol: 50
+      food:
+        maxVol: 5
+        reagents:
+        - ReagentId: Lemonade
+          Quantity: 5
+  - type: Metabolizer
+    maxReagents: 3
+    stages: [ Digestion ]
+  - type: Sprite
+    layers:
+    - state: stomach
+  - type: Item
+    heldPrefix: stomach
+  - type: FlavorProfile
+    flavors:
+      - sweet
+      - sour
+      - lemon
+
+- type: entity
+  parent: [ OrganBase, OrganEdible ]
+  id: OrganSweetsKidneys
+  name: croissant kidneys
+  description: Two flaky crescents doing their best to act like real kidneys. It shouldn’t work, but somehow it does.
+  abstract: true
+  components:
+  - type: GibbableOrgan
+  - type: Organ
+    category: Kidneys
+  - type: Sprite
+    layers:
+      - state: kidney-l
+      - state: kidney-r
+  - type: Item
+    heldPrefix: kidneys
+  - type: Metabolizer
+    maxReagents: 5
+  - type: FlavorProfile
+    flavors:
+      - sweet
+      - butter
+      - bread
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 5
+        reagents:
+        - ReagentId: Butter
+          Quantity: 5

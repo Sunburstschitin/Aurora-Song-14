@@ -1,4 +1,4 @@
-- type: markingsGroup #Funky port, edited by Aurora for Nubody
+- type: markingsGroup #Start: Funky port, edited by Aurora for Nubody
   parent: Undergarments
   id: Gingerbread
   onlyGroupWhitelisted: false
@@ -45,7 +45,7 @@
       required: false
     enum.HumanoidVisualLayers.RFoot:
       limit: 2
-      required: false
+      required: false # End: Funky port, edited by Aurora for Nubody
 
 - type: entity
   parent: BaseSpeciesAppearance
@@ -73,9 +73,7 @@
       FootRight: OrganGingerbreadFootRight
       Brain: OrganGingerbreadBrain
       Eyes: OrganGingerbreadEyes
-      Tongue: OrganHumanTongue
-      Appendix: OrganHumanAppendix
-      Ears: OrganHumanEars
+      # Aurora: Removed Tongue: OrganHumanTongue, Appendix: OrganHumanAppendix, and Ears: OrganHumanEars
       Lungs: OrganGingerbreadLungs
       Heart: OrganGingerbreadHeart
       Stomach: OrganGingerbreadStomach
@@ -152,6 +150,7 @@
 
 - type: entity
   id: OrganGingerbreadVisual
+  parent: OrganGingerbread
   abstract: true
   components:
   - type: VisualOrgan
@@ -162,7 +161,7 @@
       group: Gingerbread
 
 - type: entity
-  parent: OrganGingerbread
+  parent: [ OrganGingerbread, OrganGingerbreadVisual ]
   id: OrganGingerbreadExternal
   abstract: true
   components:
@@ -173,7 +172,7 @@
       sprite: _Funkystation/Mobs/Species/Gingerbread/parts.rsi
   - type: VisualOrganMarkings
     markingData:
-      group: None
+      group: Gingerbread
 
 - type: entity
   parent: [ OrganBaseTorso, OrganGingerbreadExternal ]
@@ -216,31 +215,46 @@
   id: OrganGingerbreadFootRight
 
 - type: entity
-  parent: [ OrganBaseHeart, OrganGingerbreadInternal, OrganGingerbreadMetabolizer ]
+  parent: [ OrganSweetsHeart, OrganGingerbreadInternal, OrganGingerbreadMetabolizer ]
   id: OrganGingerbreadHeart
 
 - type: entity
-  parent: [ OrganBaseStomach, OrganGingerbreadInternal, OrganGingerbreadMetabolizer ]
+  parent: [ OrganSweetsStomach, OrganGingerbreadInternal, OrganGingerbreadMetabolizer ]
   id: OrganGingerbreadStomach
 
 - type: entity
-  parent: [ OrganGingerbreadVisual, OrganBaseEyes, OrganGingerbreadInternal ]
+  parent: [ OrganGingerbreadVisual, OrganSweetsEyes, OrganGingerbreadInternal ]
   id: OrganGingerbreadEyes
+  name: gummy eyes
+  components:
+  - type: VisualOrgan
+    data:
+      sprite: Mobs/Customization/eyes.rsi
+      state: no_eyes
 
 - type: entity
-  parent: [ OrganBaseBrain, OrganGingerbreadInternal ]
+  parent: [ OrganSweetsBrain, OrganGingerbreadInternal ]
   id: OrganGingerbreadBrain
+  name: pudding brain
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 5
+        reagents:
+        - ReagentId: Theobromine
+          Quantity: 5
+  description: The source of incredible, unending fudginess. Yum!
 
 - type: entity
-  parent: [ OrganBaseLungs, OrganGingerbreadInternal, OrganGingerbreadMetabolizer ]
+  parent: [ OrganSweetsLungs, OrganGingerbreadInternal, OrganGingerbreadMetabolizer ]
   id: OrganGingerbreadLungs
 
 - type: entity
-  parent: [ OrganBaseLiver, OrganGingerbreadInternal, OrganGingerbreadMetabolizer ]
+  parent: [ OrganSweetsLiver, OrganGingerbreadInternal, OrganGingerbreadMetabolizer ]
   id: OrganGingerbreadLiver
 
 - type: entity
-  parent: [ OrganBaseKidneys, OrganGingerbreadInternal, OrganGingerbreadMetabolizer ]
+  parent: [ OrganSweetsKidneys, OrganGingerbreadInternal, OrganGingerbreadMetabolizer ]
   id: OrganGingerbreadKidneys
 
 - type: entity
