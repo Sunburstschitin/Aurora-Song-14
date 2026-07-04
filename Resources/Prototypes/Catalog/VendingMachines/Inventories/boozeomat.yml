@@ -6,7 +6,7 @@
     DrinkGlassCoupeShaped: 10
     DrinkVacuumFlask: 5
     DrinkVacuumFlaskXL: 5 # Imp item
-    DrinkSakeCupEmpty #Frontier
+    DrinkSakeCupEmpty: 5 #Frontier
     DrinkFlaskBar: 5
     DrinkShaker: 5
     DrinkJigger: 5
