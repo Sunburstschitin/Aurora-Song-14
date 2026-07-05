@@ -149,5 +149,5 @@
   - type: Engraveable #Imp
   - type: Tool
     qualities:
-   - Rolling # Perfectly cylindrical flask
+    - Rolling # Perfectly cylindrical flask
     speedModifier: 0.75
