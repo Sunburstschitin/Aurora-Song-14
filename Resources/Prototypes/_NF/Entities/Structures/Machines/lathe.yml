@@ -101,6 +101,7 @@
     - NFServiceStatic
     - NFPaperAndPaperAccessories
     - ReportingStatic # DeltaV
+    - LunchboxPack # Imp
   - type: EmagLatheRecipes
     emagStaticPacks:
     - NFServiceTechfabEmagStatic

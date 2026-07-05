@@ -1,32 +1,4 @@
 - type: latheRecipe
-  id: PrizeTicketGold
-  result: PrizeTicketGold
-  completetime: 1
-  materials:
-    Cardboard: 20
-
-- type: latheRecipe
-  id: PrizeTicketSilver
-  result: PrizeTicketSilver
-  completetime: 1
-  materials:
-    Cardboard: 20
-
-- type: latheRecipe
-  id: PrizeTicketBronze
-  result: PrizeTicketBronze
-  completetime: 1
-  materials:
-    Cardboard: 20
-
-- type: latheRecipe
-  id: PrizeTicketDiamond
-  result: PrizeTicketDiamond
-  completetime: 1
-  materials:
-    Cardboard: 20
-
-- type: latheRecipe
   id: DrinkVacuumFlaskXL
   result: DrinkVacuumFlaskXL
   completetime: 1
