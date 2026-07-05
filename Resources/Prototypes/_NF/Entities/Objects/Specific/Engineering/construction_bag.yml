@@ -76,7 +76,7 @@
       visible: false
       map: [ "enum.ToggleableVisuals.Layer" ]
   - type: Item
-    size: Ginormous
+    size: Normal # Aurora: Ginormous>Normal
     inhandVisuals:
       left:
       - state: inhand-left
