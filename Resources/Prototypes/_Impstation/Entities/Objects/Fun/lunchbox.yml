@@ -30,9 +30,6 @@
           True: { state: icon-open }
           False: { state: icon }
   - type: Appearance
-  - type: StorageFill
-    contents:
-      - id: Paper
   - type: Engraveable
 
 - type: entity
