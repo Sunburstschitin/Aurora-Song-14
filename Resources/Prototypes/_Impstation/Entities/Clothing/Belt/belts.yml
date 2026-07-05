@@ -40,6 +40,4 @@
         - PlushieCarp
         #- PlushieGhost #this makes things bad
         - ToyRubberDuck
-      components:
-        - SpaceBlade
   - type: Appearance
