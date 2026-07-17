@@ -2,10 +2,10 @@ using System.Text.RegularExpressions;
 using Content.Shared.Speech;
 using Content.Server._AS.Speech.Components;
 namespace Content.Server._AS.Speech.EntitySystems;
-/* Makes You Speak With Emphasis On Everything Gay Boy/Girl/Neither/Both/Etc. */
+/* Makes You Speak With Emphasis On Everything */
 public sealed class EmphasisAccentSystem : EntitySystem
 {
-    private static readonly Regex RegexStartOfWord = new(@"([a-z])(?:|^\s)");
+    private static readonly Regex RegexStartOfWord = new(@"([a-z])(\s?:|^)");
     public override void Initialize()
     {
         base.Initialize();
