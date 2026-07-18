@@ -98,6 +98,14 @@
         {
             "name": "faceburn",
             "directions": 4
+        },
+        {
+            "name": "flylure",
+            "directions": 4
+        },
+        {
+            "name": "leafponytail",
+            "directions": 4
         }
     ]
 }

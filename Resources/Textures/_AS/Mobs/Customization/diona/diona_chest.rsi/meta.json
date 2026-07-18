@@ -42,6 +42,22 @@
         {
             "name": "littlewing",
             "directions": 4
+        },
+        {
+            "name": "shavedwillowwings",
+            "directions": 4
+        },
+        {
+            "name": "thornridge",
+            "directions": 4
+        },
+        {
+            "name": "willowwingleaves",
+            "directions": 4
+        },
+        {
+            "name": "willowwings",
+            "directions": 4
         }
     ]
 }

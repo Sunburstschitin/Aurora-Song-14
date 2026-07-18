@@ -6,8 +6,11 @@
   physicalDesc: reagent-physical-desc-metallic
   flavor: metallic
   color: "#EDFAFF"
+  tags: # Aurora's Song
+  - IPCCompatible
+  - ShelegCompatible
   metabolisms:
-    Medicine:
+    Bloodstream: # Aurora's Song - Medicine>Bloodstream
       metabolismRate: 0.5
       effects:
       - !type:AdjustReagent
@@ -43,8 +46,10 @@
   physicalDesc: reagent-physical-desc-hearty
   flavor: oaken
   color: "#63542b"
+  tags:
+  - Cryogenic
   metabolisms:
-    Cryogenic:
+    Bloodstream: # Aurora's Song - Cryogenic>Bloodstream
       metabolismRate: 1.0
       effects:
       - !type:HealthChange
@@ -72,8 +77,10 @@
   physicalDesc: reagent-physical-desc-sanguine
   flavor: warriorBlood
   color: "#470000"
+  tags:
+  - Cryogenic
   metabolisms:
-    Cryogenic:
+    Bloodstream: # Aurora's Song - Cryogenic>Bloodstream
       metabolismRate: 2.5
       effects:
       - !type:ModifyBleed

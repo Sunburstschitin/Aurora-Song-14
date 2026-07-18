@@ -26,6 +26,14 @@
         {
             "name": "trunk",
             "directions": 4
+        },
+        {
+            "name": "lighttailinner",
+            "directions": 4
+        },
+        {
+            "name": "lighttailouter",
+            "directions": 4
         }
     ]
 }
