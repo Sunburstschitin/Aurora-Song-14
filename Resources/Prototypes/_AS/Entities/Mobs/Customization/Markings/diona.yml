@@ -3,11 +3,6 @@
   id: DionaFlyLureHead
   bodyPart: HeadTop
   groupWhitelist: [Diona]
-  coloring:
-    default:
-      type:
-        !type:SimpleColoring
-          color: "#FFFFFF"
   sprites:
   - sprite: _AS/Mobs/Customization/diona/diona_head.rsi
     state: flylure
@@ -16,11 +11,6 @@
   id: DionaLeafPonytailHead
   bodyPart: HeadSide
   groupWhitelist: [Diona]
-  coloring:
-    default:
-      type:
-        !type:SimpleColoring
-          color: "#FFFFFF"
   sprites:
   - sprite: _AS/Mobs/Customization/diona/diona_head.rsi
     state: leafponytail
@@ -29,11 +19,6 @@
   id: DionaAntlersHead
   bodyPart: HeadSide
   groupWhitelist: [Diona]
-  coloring:
-    default:
-      type:
-        !type:SimpleColoring
-          color: "#FFFFFF"
   sprites:
   - sprite: _AS/Mobs/Customization/diona/diona_head.rsi
     state: antlers
@@ -42,11 +27,6 @@
   id: DionaSideAntlerHead
   bodyPart: HeadSide
   groupWhitelist: [Diona]
-  coloring:
-    default:
-      type:
-        !type:SimpleColoring
-          color: "#FFFFFF"
   sprites:
   - sprite: _AS/Mobs/Customization/diona/diona_head.rsi
     state: sideantlertrunk
@@ -57,11 +37,6 @@
   id: DionaTreeFaceHead
   bodyPart: HeadSide
   groupWhitelist: [Diona]
-  coloring:
-    default:
-      type:
-        !type:SimpleColoring
-          color: "#FFFFFF"
   sprites:
   - sprite: _AS/Mobs/Customization/diona/diona_head.rsi
     state: treefacetrunk
@@ -72,10 +47,6 @@
   id: DionaBigEyeHead
   bodyPart: Eye
   groupWhitelist: [Diona]
-  coloring:
-    default:
-      type:
-        !type:EyeColoring
   sprites:
   - sprite: _AS/Mobs/Customization/diona/diona_head.rsi
     state: bigeye
@@ -84,11 +55,6 @@
   id: DionaBluebellHead
   bodyPart: Head
   groupWhitelist: [Diona]
-  coloring:
-    default:
-      type:
-        !type:SimpleColoring
-          color: "#FFFFFF"
   sprites:
   - sprite: _AS/Mobs/Customization/diona/diona_head.rsi
     state: bluebellflower
@@ -99,11 +65,6 @@
   id: DionaEyeFlowerHead
   bodyPart: Head
   groupWhitelist: [Diona]
-  coloring:
-    default:
-      type:
-        !type:SimpleColoring
-          color: "#FFFFFF"
   sprites:
   - sprite: _AS/Mobs/Customization/diona/diona_head.rsi
     state: eyeflower
@@ -114,11 +75,6 @@
   id: DionaMandiblesHead
   bodyPart: Head
   groupWhitelist: [Diona]
-  coloring:
-    default:
-      type:
-        !type:SimpleColoring
-          color: "#FFFFFF"
   sprites:
   - sprite: _AS/Mobs/Customization/diona/diona_head.rsi
     state: mandibles
@@ -127,11 +83,6 @@
   id: DionaMothHead
   bodyPart: Eye
   groupWhitelist: [Diona]
-  coloring:
-    default:
-      type:
-        !type:SimpleColoring
-          color: "#FFFFFF"
   sprites:
   - sprite: _AS/Mobs/Customization/diona/diona_head.rsi
     state: mothface
@@ -140,11 +91,6 @@
   id: DionaPompomHead
   bodyPart: Head
   groupWhitelist: [Diona]
-  coloring:
-    default:
-      type:
-        !type:SimpleColoring
-          color: "#FFFFFF"
   sprites:
   - sprite: _AS/Mobs/Customization/diona/diona_head.rsi
     state: pompom
@@ -153,11 +99,6 @@
   id: DionaSmallCornflowerHead
   bodyPart: Head
   groupWhitelist: [Diona]
-  coloring:
-    default:
-      type:
-        !type:SimpleColoring
-          color: "#FFFFFF"
   sprites:
   - sprite: _AS/Mobs/Customization/diona/diona_head.rsi
     state: smallcornflower
@@ -166,11 +107,6 @@
   id: DionaSmallMandiblesHead
   bodyPart: Head
   groupWhitelist: [Diona]
-  coloring:
-    default:
-      type:
-        !type:SimpleColoring
-          color: "#FFFFFF"
   sprites:
   - sprite: _AS/Mobs/Customization/diona/diona_head.rsi
     state: smallmandibles
@@ -179,11 +115,6 @@
   id: DionaSproutLeavesHead
   bodyPart: Head
   groupWhitelist: [Diona]
-  coloring:
-    default:
-      type:
-        !type:SimpleColoring
-          color: "#FFFFFF"
   sprites:
   - sprite: _AS/Mobs/Customization/diona/diona_head.rsi
     state: sproutleaves
@@ -192,11 +123,6 @@
   id: DionaThornFangsHead
   bodyPart: Head
   groupWhitelist: [Diona]
-  coloring:
-    default:
-      type:
-        !type:SimpleColoring
-          color: "#FFFFFF"
   sprites:
   - sprite: _AS/Mobs/Customization/diona/diona_head.rsi
     state: thornfangs
@@ -205,10 +131,6 @@
   id: DionaTripleEyeHead
   bodyPart: Eye
   groupWhitelist: [Diona]
-  coloring:
-    default:
-      type:
-        !type:EyeColoring
   sprites:
   - sprite: _AS/Mobs/Customization/diona/diona_head.rsi
     state: tripleeye
@@ -217,10 +139,6 @@
   id: DionaVineHornsHead
   bodyPart: HeadTop
   groupWhitelist: [Diona]
-  coloring:
-    default:
-      type:
-        !type:SkinColoring
   sprites:
   - sprite: _AS/Mobs/Customization/diona/diona_head.rsi
     state: vinehorns
@@ -229,11 +147,6 @@
   id: DionaIntennaHead
   bodyPart: HeadTop
   groupWhitelist: [Diona]
-  coloring:
-    default:
-      type:
-        !type:SimpleColoring
-          color: "#FFFFFF"
   sprites:
   - sprite: _AS/Mobs/Customization/diona/diona_head.rsi
     state: intenna
@@ -242,11 +155,6 @@
   id: DionaOutennaHead
   bodyPart: HeadTop
   groupWhitelist: [Diona]
-  coloring:
-    default:
-      type:
-        !type:SimpleColoring
-          color: "#FFFFFF"
   sprites:
   - sprite: _AS/Mobs/Customization/diona/diona_head.rsi
     state: outenna
@@ -255,10 +163,6 @@
   id: DionaStemHead
   bodyPart: HeadTop
   groupWhitelist: [Diona]
-  coloring:
-    default:
-      type:
-        !type:SkinColoring
   sprites:
   - sprite: _AS/Mobs/Customization/diona/diona_head.rsi
     state: stem
@@ -267,11 +171,6 @@
   id: DionaBurnHead
   bodyPart: Head
   groupWhitelist: [Diona]
-  coloring:
-    default:
-      type:
-        !type:SimpleColoring
-          color: "#FFFFFF"
   sprites:
   - sprite: _AS/Mobs/Customization/diona/diona_head.rsi
     state: faceburn
@@ -281,11 +180,6 @@
   id: DionaWillowWingChest
   bodyPart: LLeg
   groupWhitelist: [Diona]
-  coloring:
-    default:
-      type:
-        !type:SimpleColoring
-          color: "#FFFFFF"
   sprites:
   - sprite: _AS/Mobs/Customization/diona/diona_chest.rsi
     state: willowwings
@@ -296,11 +190,6 @@
   id: DionaBranchWingChest
   bodyPart: LLeg
   groupWhitelist: [Diona]
-  coloring:
-    default:
-      type:
-        !type:SimpleColoring
-          color: "#FFFFFF"
   sprites:
   - sprite: _AS/Mobs/Customization/diona/diona_chest.rsi
     state: shavedwillowwings
@@ -309,11 +198,6 @@
   id: DionaThornRidgeChest
   bodyPart: LLeg
   groupWhitelist: [Diona]
-  coloring:
-    default:
-      type:
-        !type:SimpleColoring
-          color: "#FFFFFF"
   sprites:
   - sprite: _AS/Mobs/Customization/diona/diona_chest.rsi
     state: thornridge
@@ -322,11 +206,6 @@
   id: DionaClownFlowerChest
   bodyPart: LLeg
   groupWhitelist: [Diona]
-  coloring:
-    default:
-      type:
-        !type:SimpleColoring
-          color: "#FFFFFF"
   sprites:
   - sprite: _AS/Mobs/Customization/diona/diona_chest.rsi
     state: clownflower
@@ -335,11 +214,6 @@
   id: DionaLadybugChest
   bodyPart: LLeg
   groupWhitelist: [Diona]
-  coloring:
-    default:
-      type:
-        !type:SimpleColoring
-          color: "#FFFFFF"
   sprites:
   - sprite: _AS/Mobs/Customization/diona/diona_chest.rsi
     state: ladybugshell
@@ -350,11 +224,6 @@
   id: DionaRibsChest
   bodyPart: Chest
   groupWhitelist: [Diona]
-  coloring:
-    default:
-      type:
-        !type:SimpleColoring
-          color: "#FFFFFF"
   sprites:
   - sprite: _AS/Mobs/Customization/diona/diona_chest.rsi
     state: ribs
@@ -363,11 +232,6 @@
   id: DionaSpineChest
   bodyPart: Chest
   groupWhitelist: [Diona]
-  coloring:
-    default:
-      type:
-        !type:SimpleColoring
-          color: "#FFFFFF"
   sprites:
   - sprite: _AS/Mobs/Customization/diona/diona_chest.rsi
     state: spine
@@ -376,11 +240,6 @@
   id: DionaSylvanChest
   bodyPart: LLeg
   groupWhitelist: [Diona]
-  coloring:
-    default:
-      type:
-        !type:SimpleColoring
-          color: "#FFFFFF"
   sprites:
   - sprite: _AS/Mobs/Customization/diona/diona_chest.rsi
     state: sylvan
@@ -389,11 +248,6 @@
   id: DionaBurnChest
   bodyPart: Chest
   groupWhitelist: [Diona]
-  coloring:
-    default:
-      type:
-        !type:SimpleColoring
-          color: "#FFFFFF"
   sprites:
   - sprite: _AS/Mobs/Customization/diona/diona_chest.rsi
     state: chestburn
@@ -402,11 +256,6 @@
   id: DionaMouthChest
   bodyPart: Chest
   groupWhitelist: [Diona]
-  coloring:
-    default:
-      type:
-        !type:SimpleColoring
-          color: "#FFFFFF"
   sprites:
   - sprite: _AS/Mobs/Customization/diona/diona_chest.rsi
     state: chestmouth
@@ -415,11 +264,6 @@
   id: DionaLittleWingChest
   bodyPart: Chest
   groupWhitelist: [Diona]
-  coloring:
-    default:
-      type:
-        !type:SimpleColoring
-          color: "#FFFFFF"
   sprites:
   - sprite: _AS/Mobs/Customization/diona/diona_chest.rsi
     state: littlewing
@@ -429,10 +273,6 @@
   id: DionaSproutTail
   bodyPart: Tail
   groupWhitelist: [Diona]
-  coloring:
-    default:
-      type:
-        !type:SkinColoring
   sprites:
   - sprite: _AS/Mobs/Customization/diona/diona_tail.rsi
     state: sprouttail
@@ -441,10 +281,6 @@
   id: DionaLightTail
   bodyPart: Tail
   groupWhitelist: [Diona]
-  coloring:
-    default:
-      type:
-        !type:SkinColoring
   sprites:
   - sprite: _AS/Mobs/Customization/diona/diona_tail.rsi
     state: lighttailinner
@@ -455,10 +291,6 @@
   id: DionaNymphTail
   bodyPart: Tail
   groupWhitelist: [Diona]
-  coloring:
-    default:
-      type:
-        !type:SkinColoring
   sprites:
   - sprite: _AS/Mobs/Customization/diona/diona_tail.rsi
     state: nymphtail
@@ -467,10 +299,6 @@
   id: DionaSmallFlowerTail
   bodyPart: Tail
   groupWhitelist: [Diona]
-  coloring:
-    default:
-      type:
-        !type:SkinColoring
   sprites:
   - sprite: _AS/Mobs/Customization/diona/diona_tail.rsi
     state: smallflower
@@ -479,10 +307,6 @@
   id: DionaTrunkTail
   bodyPart: Tail
   groupWhitelist: [Diona]
-  coloring:
-    default:
-      type:
-       !type:SkinColoring
   sprites:
   - sprite: _AS/Mobs/Customization/diona/diona_tail.rsi
     state: trunk
@@ -491,10 +315,6 @@
   id: DionaSnakeTail
   bodyPart: Tail
   groupWhitelist: [Diona]
-  coloring:
-    default:
-      type:
-        !type:SkinColoring
   sprites:
   - sprite: _AS/Mobs/Customization/diona/diona_tail.rsi
     state: snake
@@ -504,11 +324,6 @@
   id: DionaMothOverlay
   bodyPart: LLeg
   groupWhitelist: [Diona]
-  coloring:
-    default:
-      type:
-        !type:SimpleColoring
-          color: "#FFFFFF"
   sprites:
   - sprite: _AS/Mobs/Customization/diona/diona_overlay.rsi
     state: mothoverlay
@@ -518,11 +333,6 @@
   id: DionaEyesArms
   bodyPart: LArm
   groupWhitelist: [Diona]
-  coloring:
-    default:
-      type:
-        !type:SimpleColoring
-          color: "#FFFFFF"
   sprites:
   - sprite: _AS/Mobs/Customization/diona/diona_arms.rsi
     state: armeyes
