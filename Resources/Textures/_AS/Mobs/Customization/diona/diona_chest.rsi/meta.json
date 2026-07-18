@@ -30,6 +30,18 @@
         {
             "name": "sylvan",
             "directions": 4
+        },
+        {
+            "name": "chest burn",
+            "directions": 4
+        },
+        {
+            "name": "chestmouth",
+            "directions": 4
+        },
+        {
+            "name": "littlewing",
+            "directions": 4
         }
     ]
 }

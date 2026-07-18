@@ -94,6 +94,10 @@
         {
             "name": "vinehorns",
             "directions": 4
+        },
+        {
+            "name": "faceburn",
+            "directions": 4
         }
     ]
 }

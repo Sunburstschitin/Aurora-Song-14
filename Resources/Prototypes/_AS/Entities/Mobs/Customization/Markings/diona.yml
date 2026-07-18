@@ -1,9 +1,8 @@
-#Head
+#region Head
 - type: marking
   id: DionaFlyLureHead
   bodyPart: HeadTop
-  markingCategory: HeadSide
-  speciesRestriction: [Diona]
+  groupWhitelist: [Diona]
   coloring:
     default:
       type:
@@ -16,8 +15,7 @@
 - type: marking
   id: DionaLeafPonytailHead
   bodyPart: HeadSide
-  markingCategory: HeadSide
-  speciesRestriction: [Diona]
+  groupWhitelist: [Diona]
   coloring:
     default:
       type:
@@ -30,8 +28,7 @@
 - type: marking
   id: DionaAntlersHead
   bodyPart: HeadSide
-  markingCategory: HeadSide
-  speciesRestriction: [Diona]
+  groupWhitelist: [Diona]
   coloring:
     default:
       type:
@@ -44,8 +41,7 @@
 - type: marking
   id: DionaSideAntlerHead
   bodyPart: HeadSide
-  markingCategory: HeadSide
-  speciesRestriction: [Diona]
+  groupWhitelist: [Diona]
   coloring:
     default:
       type:
@@ -60,8 +56,7 @@
 - type: marking
   id: DionaTreeFaceHead
   bodyPart: HeadSide
-  markingCategory: HeadSide
-  speciesRestriction: [Diona]
+  groupWhitelist: [Diona]
   coloring:
     default:
       type:
@@ -76,8 +71,7 @@
 - type: marking
   id: DionaBigEyeHead
   bodyPart: Eye
-  markingCategory: Head
-  speciesRestriction: [Diona]
+  groupWhitelist: [Diona]
   coloring:
     default:
       type:
@@ -89,8 +83,7 @@
 - type: marking
   id: DionaBluebellHead
   bodyPart: Head
-  markingCategory: Head
-  speciesRestriction: [Diona]
+  groupWhitelist: [Diona]
   coloring:
     default:
       type:
@@ -105,8 +98,7 @@
 - type: marking
   id: DionaEyeFlowerHead
   bodyPart: Head
-  markingCategory: Head
-  speciesRestriction: [Diona]
+  groupWhitelist: [Diona]
   coloring:
     default:
       type:
@@ -121,8 +113,7 @@
 - type: marking
   id: DionaMandiblesHead
   bodyPart: Head
-  markingCategory: Head
-  speciesRestriction: [Diona]
+  groupWhitelist: [Diona]
   coloring:
     default:
       type:
@@ -135,8 +126,7 @@
 - type: marking
   id: DionaMothHead
   bodyPart: Eye
-  markingCategory: Head
-  speciesRestriction: [Diona]
+  groupWhitelist: [Diona]
   coloring:
     default:
       type:
@@ -149,8 +139,7 @@
 - type: marking
   id: DionaPompomHead
   bodyPart: Head
-  markingCategory: Head
-  speciesRestriction: [Diona]
+  groupWhitelist: [Diona]
   coloring:
     default:
       type:
@@ -163,8 +152,7 @@
 - type: marking
   id: DionaSmallCornflowerHead
   bodyPart: Head
-  markingCategory: Head
-  speciesRestriction: [Diona]
+  groupWhitelist: [Diona]
   coloring:
     default:
       type:
@@ -177,8 +165,7 @@
 - type: marking
   id: DionaSmallMandiblesHead
   bodyPart: Head
-  markingCategory: Head
-  speciesRestriction: [Diona]
+  groupWhitelist: [Diona]
   coloring:
     default:
       type:
@@ -191,8 +178,7 @@
 - type: marking
   id: DionaSproutLeavesHead
   bodyPart: Head
-  markingCategory: Head
-  speciesRestriction: [Diona]
+  groupWhitelist: [Diona]
   coloring:
     default:
       type:
@@ -205,8 +191,7 @@
 - type: marking
   id: DionaThornFangsHead
   bodyPart: Head
-  markingCategory: Head
-  speciesRestriction: [Diona]
+  groupWhitelist: [Diona]
   coloring:
     default:
       type:
@@ -219,8 +204,7 @@
 - type: marking
   id: DionaTripleEyeHead
   bodyPart: Eye
-  markingCategory: Head
-  speciesRestriction: [Diona]
+  groupWhitelist: [Diona]
   coloring:
     default:
       type:
@@ -232,8 +216,7 @@
 - type: marking
   id: DionaVineHornsHead
   bodyPart: HeadTop
-  markingCategory: HeadTop
-  speciesRestriction: [Diona]
+  groupWhitelist: [Diona]
   coloring:
     default:
       type:
@@ -245,8 +228,7 @@
 - type: marking
   id: DionaIntennaHead
   bodyPart: HeadTop
-  markingCategory: HeadTop
-  speciesRestriction: [Diona]
+  groupWhitelist: [Diona]
   coloring:
     default:
       type:
@@ -259,8 +241,7 @@
 - type: marking
   id: DionaOutennaHead
   bodyPart: HeadTop
-  markingCategory: HeadTop
-  speciesRestriction: [Diona]
+  groupWhitelist: [Diona]
   coloring:
     default:
       type:
@@ -273,8 +254,7 @@
 - type: marking
   id: DionaStemHead
   bodyPart: HeadTop
-  markingCategory: HeadTop
-  speciesRestriction: [Diona]
+  groupWhitelist: [Diona]
   coloring:
     default:
       type:
@@ -283,12 +263,24 @@
   - sprite: _AS/Mobs/Customization/diona/diona_head.rsi
     state: stem
 
-#Chest
+- type: marking
+  id: DionaBurnHead
+  bodyPart: Head
+  groupWhitelist: [Diona]
+  coloring:
+    default:
+      type:
+        !type:SimpleColoring
+          color: "#FFFFFF"
+  sprites:
+  - sprite: _AS/Mobs/Customization/diona/diona_head.rsi
+    state: faceburn
+
+#region Chest
 - type: marking
   id: DionaWillowWingChest
   bodyPart: LLeg
-  markingCategory: Chest
-  speciesRestriction: [Diona]
+  groupWhitelist: [Diona]
   coloring:
     default:
       type:
@@ -303,8 +295,7 @@
 - type: marking
   id: DionaBranchWingChest
   bodyPart: LLeg
-  markingCategory: Chest
-  speciesRestriction: [Diona]
+  groupWhitelist: [Diona]
   coloring:
     default:
       type:
@@ -317,8 +308,7 @@
 - type: marking
   id: DionaThornRidgeChest
   bodyPart: LLeg
-  markingCategory: Chest
-  speciesRestriction: [Diona]
+  groupWhitelist: [Diona]
   coloring:
     default:
       type:
@@ -331,8 +321,7 @@
 - type: marking
   id: DionaClownFlowerChest
   bodyPart: LLeg
-  markingCategory: Chest
-  speciesRestriction: [Diona]
+  groupWhitelist: [Diona]
   coloring:
     default:
       type:
@@ -345,8 +334,7 @@
 - type: marking
   id: DionaLadybugChest
   bodyPart: LLeg
-  markingCategory: Chest
-  speciesRestriction: [Diona]
+  groupWhitelist: [Diona]
   coloring:
     default:
       type:
@@ -361,8 +349,7 @@
 - type: marking
   id: DionaRibsChest
   bodyPart: Chest
-  markingCategory: Chest
-  speciesRestriction: [Diona]
+  groupWhitelist: [Diona]
   coloring:
     default:
       type:
@@ -375,8 +362,7 @@
 - type: marking
   id: DionaSpineChest
   bodyPart: Chest
-  markingCategory: Chest
-  speciesRestriction: [Diona]
+  groupWhitelist: [Diona]
   coloring:
     default:
       type:
@@ -389,8 +375,7 @@
 - type: marking
   id: DionaSylvanChest
   bodyPart: LLeg
-  markingCategory: Chest
-  speciesRestriction: [Diona]
+  groupWhitelist: [Diona]
   coloring:
     default:
       type:
@@ -400,12 +385,50 @@
   - sprite: _AS/Mobs/Customization/diona/diona_chest.rsi
     state: sylvan
 
-#Tail
+- type: marking
+  id: DionaBurnChest
+  bodyPart: Chest
+  groupWhitelist: [Diona]
+  coloring:
+    default:
+      type:
+        !type:SimpleColoring
+          color: "#FFFFFF"
+  sprites:
+  - sprite: _AS/Mobs/Customization/diona/diona_chest.rsi
+    state: chest burn
+
+- type: marking
+  id: DionaMouthChest
+  bodyPart: Chest
+  groupWhitelist: [Diona]
+  coloring:
+    default:
+      type:
+        !type:SimpleColoring
+          color: "#FFFFFF"
+  sprites:
+  - sprite: _AS/Mobs/Customization/diona/diona_chest.rsi
+    state: chestmouth
+
+- type: marking
+  id: DionaLittleWingChest
+  bodyPart: Chest
+  groupWhitelist: [Diona]
+  coloring:
+    default:
+      type:
+        !type:SimpleColoring
+          color: "#FFFFFF"
+  sprites:
+  - sprite: _AS/Mobs/Customization/diona/diona_chest.rsi
+    state: littlewing
+
+#region Tail
 - type: marking
   id: DionaSproutTail
   bodyPart: Tail
-  markingCategory: Tail
-  speciesRestriction: [Diona]
+  groupWhitelist: [Diona]
   coloring:
     default:
       type:
@@ -417,8 +440,7 @@
 - type: marking
   id: DionaLightTail
   bodyPart: Tail
-  markingCategory: Tail
-  speciesRestriction: [Diona]
+  groupWhitelist: [Diona]
   coloring:
     default:
       type:
@@ -432,8 +454,7 @@
 - type: marking
   id: DionaNymphTail
   bodyPart: Tail
-  markingCategory: Tail
-  speciesRestriction: [Diona]
+  groupWhitelist: [Diona]
   coloring:
     default:
       type:
@@ -445,8 +466,7 @@
 - type: marking
   id: DionaSmallFlowerTail
   bodyPart: Tail
-  markingCategory: Tail
-  speciesRestriction: [Diona]
+  groupWhitelist: [Diona]
   coloring:
     default:
       type:
@@ -458,8 +478,7 @@
 - type: marking
   id: DionaTrunkTail
   bodyPart: Tail
-  markingCategory: Tail
-  speciesRestriction: [Diona]
+  groupWhitelist: [Diona]
   coloring:
     default:
       type:
@@ -471,8 +490,7 @@
 - type: marking
   id: DionaSnakeTail
   bodyPart: Tail
-  markingCategory: Tail
-  speciesRestriction: [Diona]
+  groupWhitelist: [Diona]
   coloring:
     default:
       type:
@@ -481,12 +499,11 @@
   - sprite: _AS/Mobs/Customization/diona/diona_tail.rsi
     state: snake
 
-#Overlay
+#region Overlay
 - type: marking
   id: DionaMothOverlay
   bodyPart: LLeg
-  markingCategory: Overlay
-  speciesRestriction: [Diona]
+  groupWhitelist: [Diona]
   coloring:
     default:
       type:
@@ -495,3 +512,17 @@
   sprites:
   - sprite: _AS/Mobs/Customization/diona/diona_overlay.rsi
     state: mothoverlay
+
+#region Arms
+- type: marking
+  id: DionaEyesArms
+  bodyPart: LArm
+  groupWhitelist: [Diona]
+  coloring:
+    default:
+      type:
+        !type:SimpleColoring
+          color: "#FFFFFF"
+  sprites:
+  - sprite: _AS/Mobs/Customization/diona/diona_arms.rsi
+    state: armeyes
