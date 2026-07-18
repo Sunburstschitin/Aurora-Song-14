@@ -396,7 +396,7 @@
           color: "#FFFFFF"
   sprites:
   - sprite: _AS/Mobs/Customization/diona/diona_chest.rsi
-    state: chest burn
+    state: chestburn
 
 - type: marking
   id: DionaMouthChest

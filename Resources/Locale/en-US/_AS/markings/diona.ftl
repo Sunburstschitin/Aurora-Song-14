@@ -113,7 +113,7 @@ marking-DionaMothOverlay = Moth Swarm
 marking-DionaEyesArms-armeyes = Arm Eyes
 marking-DionaEyesArms = Arm Eyes
 
-marking-DionaBurnChest-chest burn = Chest Burn
+marking-DionaBurnChest-chestburn = Chest Burn
 marking-DionaBurnChest = Chest Burn
 
 marking-DionaMouthChest-chestmouth = Chest Maw
