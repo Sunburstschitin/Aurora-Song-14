@@ -34,6 +34,34 @@
         {
             "name": "lighttailouter",
             "directions": 4
+        },
+        {
+            "name": "ladybugshell",
+            "directions": 4
+        },
+        {
+            "name": "ladybugspots",
+            "directions": 4
+        },
+        {
+            "name": "sylvan",
+            "directions": 4
+        },
+        {
+            "name": "littlewing",
+            "directions": 4
+        },
+        {
+            "name": "shavedwillowwings",
+            "directions": 4
+        },
+        {
+            "name": "willowwingleaves",
+            "directions": 4
+        },
+        {
+            "name": "willowwings",
+            "directions": 4
         }
     ]
 }

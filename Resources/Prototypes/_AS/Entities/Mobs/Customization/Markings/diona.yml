@@ -45,7 +45,7 @@
 
 - type: marking
   id: DionaBigEyeHead
-  bodyPart: Eye
+  bodyPart: Head
   groupWhitelist: [Diona]
   sprites:
   - sprite: _AS/Mobs/Customization/diona/diona_head.rsi
@@ -81,7 +81,7 @@
 
 - type: marking
   id: DionaMothHead
-  bodyPart: Eye
+  bodyPart: Head
   groupWhitelist: [Diona]
   sprites:
   - sprite: _AS/Mobs/Customization/diona/diona_head.rsi
@@ -89,7 +89,7 @@
 
 - type: marking
   id: DionaPompomHead
-  bodyPart: Head
+  bodyPart: HeadTop
   groupWhitelist: [Diona]
   sprites:
   - sprite: _AS/Mobs/Customization/diona/diona_head.rsi
@@ -129,7 +129,7 @@
 
 - type: marking
   id: DionaTripleEyeHead
-  bodyPart: Eye
+  bodyPart: Head
   groupWhitelist: [Diona]
   sprites:
   - sprite: _AS/Mobs/Customization/diona/diona_head.rsi
@@ -175,50 +175,22 @@
   - sprite: _AS/Mobs/Customization/diona/diona_head.rsi
     state: faceburn
 
-#region Chest
-- type: marking
-  id: DionaWillowWingChest
-  bodyPart: LLeg
-  groupWhitelist: [Diona]
-  sprites:
-  - sprite: _AS/Mobs/Customization/diona/diona_chest.rsi
-    state: willowwings
-  - sprite: _AS/Mobs/Customization/diona/diona_chest.rsi
-    state: willowwingleaves
-
-- type: marking
-  id: DionaBranchWingChest
-  bodyPart: LLeg
-  groupWhitelist: [Diona]
-  sprites:
-  - sprite: _AS/Mobs/Customization/diona/diona_chest.rsi
-    state: shavedwillowwings
-
 - type: marking
   id: DionaThornRidgeChest
-  bodyPart: LLeg
+  bodyPart: HeadTop
   groupWhitelist: [Diona]
   sprites:
-  - sprite: _AS/Mobs/Customization/diona/diona_chest.rsi
+  - sprite: _AS/Mobs/Customization/diona/diona_head.rsi
     state: thornridge
 
+#region Chest
 - type: marking
   id: DionaClownFlowerChest
-  bodyPart: LLeg
+  bodyPart: Chest
   groupWhitelist: [Diona]
   sprites:
   - sprite: _AS/Mobs/Customization/diona/diona_chest.rsi
     state: clownflower
-
-- type: marking
-  id: DionaLadybugChest
-  bodyPart: LLeg
-  groupWhitelist: [Diona]
-  sprites:
-  - sprite: _AS/Mobs/Customization/diona/diona_chest.rsi
-    state: ladybugshell
-  - sprite: _AS/Mobs/Customization/diona/diona_chest.rsi
-    state: ladybugspots
 
 - type: marking
   id: DionaRibsChest
@@ -237,14 +209,6 @@
     state: spine
 
 - type: marking
-  id: DionaSylvanChest
-  bodyPart: LLeg
-  groupWhitelist: [Diona]
-  sprites:
-  - sprite: _AS/Mobs/Customization/diona/diona_chest.rsi
-    state: sylvan
-
-- type: marking
   id: DionaBurnChest
   bodyPart: Chest
   groupWhitelist: [Diona]
@@ -259,14 +223,8 @@
   sprites:
   - sprite: _AS/Mobs/Customization/diona/diona_chest.rsi
     state: chestmouth
-
-- type: marking
-  id: DionaLittleWingChest
-  bodyPart: Chest
-  groupWhitelist: [Diona]
-  sprites:
   - sprite: _AS/Mobs/Customization/diona/diona_chest.rsi
-    state: littlewing
+  state: chestmouthblep
 
 #region Tail
 - type: marking
@@ -319,10 +277,54 @@
   - sprite: _AS/Mobs/Customization/diona/diona_tail.rsi
     state: snake
 
+- type: marking
+  id: DionaWillowWingChest
+  bodyPart: Tail
+  groupWhitelist: [Diona]
+  sprites:
+  - sprite: _AS/Mobs/Customization/diona/diona_tail.rsi
+    state: willowwings
+  - sprite: _AS/Mobs/Customization/diona/diona_tail.rsi
+    state: willowwingleaves
+
+- type: marking
+  id: DionaBranchWingChest
+  bodyPart: Tail
+  groupWhitelist: [Diona]
+  sprites:
+  - sprite: _AS/Mobs/Customization/diona/diona_tail.rsi
+    state: shavedwillowwings
+
+- type: marking
+  id: DionaLadybugChest
+  bodyPart: Tail
+  groupWhitelist: [Diona]
+  sprites:
+  - sprite: _AS/Mobs/Customization/diona/diona_tail.rsi
+    state: ladybugshell
+  - sprite: _AS/Mobs/Customization/diona/diona_tail.rsi
+    state: ladybugspots
+
+- type: marking
+  id: DionaSylvanChest
+  bodyPart: Tail
+  groupWhitelist: [Diona]
+  sprites:
+  - sprite: _AS/Mobs/Customization/diona/diona_tail.rsi
+    state: sylvan
+
+- type: marking
+  id: DionaLittleWingChest
+  bodyPart: Tail
+  groupWhitelist: [Diona]
+  sprites:
+  - sprite: _AS/Mobs/Customization/diona/diona_tail.rsi
+    state: littlewing
+
 #region Overlay
 - type: marking
   id: DionaMothOverlay
-  bodyPart: LLeg
+  bodyPart: Overlay
   groupWhitelist: [Diona]
   sprites:
   - sprite: _AS/Mobs/Customization/diona/diona_overlay.rsi

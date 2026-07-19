@@ -27,10 +27,12 @@
     enum.HumanoidVisualLayers.RLeg:
       limit: 1
       required: false
+    enum.HumanoidVisualLayers.Tail: # Aurora's Song: Added tail marking group
+      limit: 2
+      required: false
     enum.HumanoidVisualLayers.Overlay:
       limit: 1
-      required: true
-      default: [ DionaVineOverlay ]
+      required: false # Aurora's Song: true > false
 
 - type: entity
   parent: BaseSpeciesAppearance

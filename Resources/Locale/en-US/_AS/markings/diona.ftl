@@ -116,11 +116,12 @@ marking-DionaEyesArms = Arm Eyes
 marking-DionaBurnChest-chestburn = Chest Burn
 marking-DionaBurnChest = Chest Burn
 
-marking-DionaMouthChest-chestmouth = Chest Maw
+marking-DionaMouthChest-chestmouth = Maw
+marking-DIonaMouthChest-chestmouthblep = Tongue
 marking-DionaMouthChest = Chest Maw
 
-marking-DionaLittleWingChestlittlewing = Small Wings
-marking-DionaLittleWingChestlittlewing = Small Wings
+marking-DionaLittleWingChest-littlewing = Small Wings
+marking-DionaLittleWingChest = Small Wings
 
 marking-DionaBurnHead-faceburn = Face Burn
 marking-DionaBurnHead = Face Burn

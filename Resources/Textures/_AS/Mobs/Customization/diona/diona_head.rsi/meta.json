@@ -106,6 +106,10 @@
         {
             "name": "leafponytail",
             "directions": 4
+        },
+        {
+            "name": "thornridge",
+            "directions": 4
         }
     ]
 }

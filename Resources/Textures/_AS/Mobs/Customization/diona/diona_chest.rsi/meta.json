@@ -12,23 +12,11 @@
             "directions": 4
         },
         {
-            "name": "ladybugshell",
-            "directions": 4
-        },
-        {
-            "name": "ladybugspots",
-            "directions": 4
-        },
-        {
             "name": "ribs",
             "directions": 4
         },
         {
             "name": "spine",
-            "directions": 4
-        },
-        {
-            "name": "sylvan",
             "directions": 4
         },
         {
@@ -39,24 +27,8 @@
             "name": "chestmouth",
             "directions": 4
         },
-        {
-            "name": "littlewing",
-            "directions": 4
-        },
-        {
-            "name": "shavedwillowwings",
-            "directions": 4
-        },
-        {
-            "name": "thornridge",
-            "directions": 4
-        },
-        {
-            "name": "willowwingleaves",
-            "directions": 4
-        },
-        {
-            "name": "willowwings",
+         {
+            "name": "chestmouthblep",
             "directions": 4
         }
     ]
