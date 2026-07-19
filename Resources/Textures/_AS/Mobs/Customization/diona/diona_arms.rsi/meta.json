@@ -8,7 +8,11 @@
     },
     "states": [
         {
-            "name": "armeyes",
+            "name": "larmeyes",
+            "directions": 4
+        },
+        {
+            "name": "rarmeyes",
             "directions": 4
         }
     ]

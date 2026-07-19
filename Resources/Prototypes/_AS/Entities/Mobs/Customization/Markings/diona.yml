@@ -242,8 +242,10 @@
   sprites:
   - sprite: _AS/Mobs/Customization/diona/diona_tail.rsi
     state: lighttailinner
+    shader: unshaded
   - sprite: _AS/Mobs/Customization/diona/diona_tail.rsi
     state: lighttailouter
+
 
 - type: marking
   id: DionaNymphTail
@@ -332,9 +334,17 @@
 
 #region Arms
 - type: marking
-  id: DionaEyesArms
+  id: DionaEyesRightArm
+  bodyPart: RArm
+  groupWhitelist: [Diona]
+  sprites:
+  - sprite: _AS/Mobs/Customization/diona/diona_arms.rsi
+    state: rarmeyes
+
+- type: marking
+  id: DionaEyesLeftArm
   bodyPart: LArm
   groupWhitelist: [Diona]
   sprites:
   - sprite: _AS/Mobs/Customization/diona/diona_arms.rsi
-    state: armeyes
+    state: larmeyes

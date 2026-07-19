@@ -110,8 +110,11 @@ marking-DionaLightTail = Inner Light
 marking-DionaMothOverlay-mothoverlay = Moth Swarm
 marking-DionaMothOverlay = Moth Swarm
 
-marking-DionaEyesArms-armeyes = Arm Eyes
-marking-DionaEyesArms = Arm Eyes
+marking-DionaEyesLeftArm-larmeye = Arm Eyes
+marking-DionaEyesLeftArm = Arm Eyes
+
+marking-DionaEyesRightArm-rarmeye = Arm Eyes
+marking-DionaEyesRightArm = Arm Eyes
 
 marking-DionaBurnChest-chestburn = Chest Burn
 marking-DionaBurnChest = Chest Burn
