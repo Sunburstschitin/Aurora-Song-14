@@ -224,7 +224,7 @@
   - sprite: _AS/Mobs/Customization/diona/diona_chest.rsi
     state: chestmouth
   - sprite: _AS/Mobs/Customization/diona/diona_chest.rsi
-  state: chestmouthblep
+    state: chestmouthblep
 
 #region Tail
 - type: marking
