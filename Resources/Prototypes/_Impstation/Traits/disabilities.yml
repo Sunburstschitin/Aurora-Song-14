@@ -1,0 +1,6 @@
+  id: RandomUnrevivable
+  name: trait-random-unrevivable-name
+  description: trait-random-unrevivable-desc
+  category: Disabilities
+  components:
+    - type: RandomUnrevivable
