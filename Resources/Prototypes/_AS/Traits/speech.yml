@@ -3,8 +3,8 @@
 
 - type: trait
   id: EmphasisAccent
-  name: trait-emphasisaccent-name
-  description: trait-emphasisaccent-desc
+  name: trait-emphasis-accent-name
+  description: trait-emphasis-accent-desc
   category: SpeechTraits
   cost: 1
   components:
