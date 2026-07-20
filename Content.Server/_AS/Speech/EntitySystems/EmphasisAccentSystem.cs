@@ -3,9 +3,9 @@ using Content.Shared.Speech;
 using Content.Server._AS.Speech.Components;
 namespace Content.Server._AS.Speech.EntitySystems;
 
-// <summary>
-// Makes You Speak With Emphasis On Everything
-//</summary>
+/// <summary>
+/// Makes You Speak With Emphasis On Everything
+/// </summary>
 public sealed class EmphasisAccentSystem : EntitySystem
 {
     private static readonly Regex RegexStartOfWord = new(@"([a-z])(\s?:|^)");
