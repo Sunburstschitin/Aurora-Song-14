@@ -33,7 +33,7 @@
     enum.HumanoidVisualLayers.Overlay:
       limit: 1
       required: false # Aurora's Song: true > false
-      # default: [ VineOverlay ] - Aurora's Song
+      # default: [ DionaVineOverlay ] - Aurora's Song
 
 - type: entity
   parent: BaseSpeciesAppearance
