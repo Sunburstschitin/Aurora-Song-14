@@ -16,6 +16,10 @@ using Content.Shared.Timing;
 using Content.Shared.Traits.Assorted;
 using Robust.Shared.Audio.Systems;
 using Robust.Shared.Player;
+using Content.Shared.Whitelist; // Imp RDNR
+using Content.Shared.Random.Helpers; // Imp RDNR
+using Robust.Shared.Random; // imp rdnr
+using Robust.Shared.Timing; // imp rdnr
 
 namespace Content.Shared.Medical;
 
@@ -39,6 +43,7 @@ public abstract partial class SharedDefibrillatorSystem : EntitySystem
     [Dependency] private SharedMindSystem _mind = default!;
     [Dependency] private UseDelaySystem _useDelay = default!;
     [Dependency] private SharedInteractionSystem _interactionSystem = default!;
+    [Dependency] private readonly IGameTiming _timing = default!; // Imp, RDNR
 
     private readonly HashSet<EntityUid> _interacters = new();
 
@@ -211,6 +216,28 @@ public abstract partial class SharedDefibrillatorSystem : EntitySystem
             if (TryComp<MobThresholdsComponent>(target, out var targetThresholds) &&
                 _mobThreshold.TryGetThresholdForState(target, MobState.Dead, out var threshold, targetThresholds) &&
                 _damageable.GetTotalDamage(target) < threshold)
+            { // begin Imp edit - rdnr
+                if (TryComp<RandomUnrevivableComponent>(target, out var rdnr))
+                {var seed = SharedRandomExtensions.HashCodeCombine((int)_timing.CurTick.Value, GetNetEntity(ent).Id);
+                    var rand = new System.Random(seed);
+
+                    if (rand.Prob(rdnr.Chance))
+                    {
+                        if (ent.Comp.ShowMessages)
+                            _chat.TrySendInGameICMessage(ent.Owner, Loc.GetString("defibrillator-unrevivable"), InGameICChatType.Speak, true);
+                        var addDnr = EnsureComp<UnrevivableComponent>(target);
+                        addDnr.Cloneable = true;
+                        RemComp<RandomUnrevivableComponent>(target);
+                    }
+                    else
+                    {
+                        failedRevive = false;
+                        rdnr.Chance += 0.1f;
+                        Dirty(target, rdnr);
+                    }
+                }
+            } // End Imp edit - rdnr
+
             {
                 _mobState.ChangeMobState(target, MobState.Critical, targetMobState, user);
                 failedRevive = false;
